@@ -88,23 +88,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		579A0AB814C30D3B001F9778 /* RssModerableFeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RssModerableFeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		579A0AB814C30D3B001F9778 /* ModerableFeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModerableFeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		579A0ABC14C30D3C001F9778 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		579A0ABE14C30D3C001F9778 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		579A0AC014C30D3C001F9778 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		579A0AC414C30D3C001F9778 /* RssModerableFeedReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RssModerableFeedReader-Info.plist"; sourceTree = "<group>"; };
+		579A0AC414C30D3C001F9778 /* ModerableFeedReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModerableFeedReader-Info.plist"; sourceTree = "<group>"; };
 		579A0AC614C30D3C001F9778 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		579A0AC814C30D3C001F9778 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		579A0ACA14C30D3C001F9778 /* RssModerableFeedReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RssModerableFeedReader-Prefix.pch"; sourceTree = "<group>"; };
+		579A0ACA14C30D3C001F9778 /* ModerableFeedReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModerableFeedReader-Prefix.pch"; sourceTree = "<group>"; };
 		579A0ACF14C30D3C001F9778 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		579A0AD214C30D3C001F9778 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		579A0AD714C30D3C001F9778 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		579A0AD914C30D3C001F9778 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		579A0ADE14C30D3C001F9778 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		579A0AE014C30D3C001F9778 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		579A0AE714C30D3C001F9778 /* RssModerableFeedReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RssModerableFeedReaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		579A0AE714C30D3C001F9778 /* ModerableFeedReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModerableFeedReaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		579A0AE814C30D3C001F9778 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		579A0AF014C30D3C001F9778 /* RssModerableFeedReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RssModerableFeedReaderTests-Info.plist"; sourceTree = "<group>"; };
+		579A0AF014C30D3C001F9778 /* ModerableFeedReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModerableFeedReaderTests-Info.plist"; sourceTree = "<group>"; };
 		579A0AF214C30D3C001F9778 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		579A0AF414C30D3C001F9778 /* RssModerableFeedReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RssModerableFeedReaderTests.h; sourceTree = "<group>"; };
 		579A0AF514C30D3C001F9778 /* RssModerableFeedReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RssModerableFeedReaderTests.m; sourceTree = "<group>"; };
@@ -244,8 +244,8 @@
 		579A0AAD14C30D3B001F9778 = {
 			isa = PBXGroup;
 			children = (
-				579A0AC214C30D3C001F9778 /* RssModerableFeedReader */,
-				579A0AEE14C30D3C001F9778 /* RssModerableFeedReaderTests */,
+				579A0AC214C30D3C001F9778 /* ModerableFeedReader */,
+				579A0AEE14C30D3C001F9778 /* ModerableFeedReaderTests */,
 				579A0ABB14C30D3C001F9778 /* Frameworks */,
 				579A0AB914C30D3B001F9778 /* Products */,
 				579A0B3714C30FCB001F9778 /* libs */,
@@ -255,8 +255,8 @@
 		579A0AB914C30D3B001F9778 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				579A0AB814C30D3B001F9778 /* RssModerableFeedReader.app */,
-				579A0AE714C30D3C001F9778 /* RssModerableFeedReaderTests.octest */,
+				579A0AB814C30D3B001F9778 /* ModerableFeedReader.app */,
+				579A0AE714C30D3C001F9778 /* ModerableFeedReaderTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -274,42 +274,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		579A0AC214C30D3C001F9778 /* RssModerableFeedReader */ = {
+		579A0AC214C30D3C001F9778 /* ModerableFeedReader */ = {
 			isa = PBXGroup;
 			children = (
 				579A0B0314C30D79001F9778 /* Resources */,
 				579A0AFF14C30D53001F9778 /* Classes */,
 				579A0AC314C30D3C001F9778 /* Supporting Files */,
 			);
-			path = RssModerableFeedReader;
+			path = ModerableFeedReader;
 			sourceTree = "<group>";
 		};
 		579A0AC314C30D3C001F9778 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				579A0B2E14C30F06001F9778 /* Model.xcdatamodeld */,
-				579A0AC414C30D3C001F9778 /* RssModerableFeedReader-Info.plist */,
+				579A0AC414C30D3C001F9778 /* ModerableFeedReader-Info.plist */,
 				579A0AC514C30D3C001F9778 /* InfoPlist.strings */,
 				579A0AC814C30D3C001F9778 /* main.m */,
-				579A0ACA14C30D3C001F9778 /* RssModerableFeedReader-Prefix.pch */,
+				579A0ACA14C30D3C001F9778 /* ModerableFeedReader-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		579A0AEE14C30D3C001F9778 /* RssModerableFeedReaderTests */ = {
+		579A0AEE14C30D3C001F9778 /* ModerableFeedReaderTests */ = {
 			isa = PBXGroup;
 			children = (
 				579A0AF414C30D3C001F9778 /* RssModerableFeedReaderTests.h */,
 				579A0AF514C30D3C001F9778 /* RssModerableFeedReaderTests.m */,
 				579A0AEF14C30D3C001F9778 /* Supporting Files */,
 			);
-			path = RssModerableFeedReaderTests;
+			path = ModerableFeedReaderTests;
 			sourceTree = "<group>";
 		};
 		579A0AEF14C30D3C001F9778 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				579A0AF014C30D3C001F9778 /* RssModerableFeedReaderTests-Info.plist */,
+				579A0AF014C30D3C001F9778 /* ModerableFeedReaderTests-Info.plist */,
 				579A0AF114C30D3C001F9778 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -534,9 +534,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		579A0AB714C30D3B001F9778 /* RssModerableFeedReader */ = {
+		579A0AB714C30D3B001F9778 /* ModerableFeedReader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 579A0AF914C30D3C001F9778 /* Build configuration list for PBXNativeTarget "RssModerableFeedReader" */;
+			buildConfigurationList = 579A0AF914C30D3C001F9778 /* Build configuration list for PBXNativeTarget "ModerableFeedReader" */;
 			buildPhases = (
 				579A0AB414C30D3B001F9778 /* Sources */,
 				579A0AB514C30D3B001F9778 /* Frameworks */,
@@ -546,14 +546,14 @@
 			);
 			dependencies = (
 			);
-			name = RssModerableFeedReader;
+			name = ModerableFeedReader;
 			productName = RssModerableFeedReader;
-			productReference = 579A0AB814C30D3B001F9778 /* RssModerableFeedReader.app */;
+			productReference = 579A0AB814C30D3B001F9778 /* ModerableFeedReader.app */;
 			productType = "com.apple.product-type.application";
 		};
-		579A0AE614C30D3C001F9778 /* RssModerableFeedReaderTests */ = {
+		579A0AE614C30D3C001F9778 /* ModerableFeedReaderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 579A0AFC14C30D3C001F9778 /* Build configuration list for PBXNativeTarget "RssModerableFeedReaderTests" */;
+			buildConfigurationList = 579A0AFC14C30D3C001F9778 /* Build configuration list for PBXNativeTarget "ModerableFeedReaderTests" */;
 			buildPhases = (
 				579A0AE214C30D3C001F9778 /* Sources */,
 				579A0AE314C30D3C001F9778 /* Frameworks */,
@@ -565,9 +565,9 @@
 			dependencies = (
 				579A0AED14C30D3C001F9778 /* PBXTargetDependency */,
 			);
-			name = RssModerableFeedReaderTests;
+			name = ModerableFeedReaderTests;
 			productName = RssModerableFeedReaderTests;
-			productReference = 579A0AE714C30D3C001F9778 /* RssModerableFeedReaderTests.octest */;
+			productReference = 579A0AE714C30D3C001F9778 /* ModerableFeedReaderTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -578,7 +578,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 579A0AB214C30D3B001F9778 /* Build configuration list for PBXProject "RssModerableFeedReader" */;
+			buildConfigurationList = 579A0AB214C30D3B001F9778 /* Build configuration list for PBXProject "ModerableFeedReader" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -590,8 +590,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				579A0AB714C30D3B001F9778 /* RssModerableFeedReader */,
-				579A0AE614C30D3C001F9778 /* RssModerableFeedReaderTests */,
+				579A0AB714C30D3B001F9778 /* ModerableFeedReader */,
+				579A0AE614C30D3C001F9778 /* ModerableFeedReaderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -708,7 +708,7 @@
 /* Begin PBXTargetDependency section */
 		579A0AED14C30D3C001F9778 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 579A0AB714C30D3B001F9778 /* RssModerableFeedReader */;
+			target = 579A0AB714C30D3B001F9778 /* ModerableFeedReader */;
 			targetProxy = 579A0AEC14C30D3C001F9778 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -805,14 +805,14 @@
 					"\"$(SRCROOT)/libs/MagicalRecord/Mac App Unit Tests/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RssModerableFeedReader/RssModerableFeedReader-Prefix.pch";
-				INFOPLIST_FILE = "RssModerableFeedReader/RssModerableFeedReader-Info.plist";
+				GCC_PREFIX_HEADER = "ModerableFeedReader/ModerableFeedReader-Prefix.pch";
+				INFOPLIST_FILE = "ModerableFeedReader/ModerableFeedReader-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/libs/MagicalRecord/iOS App Unit Tests/Frameworks/OCMockLibrary\"",
 					"\"$(SRCROOT)/libs/MagicalRecord/Mac App Unit Tests/Frameworks/OCMockLibrary\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ModerableFeedReader;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -826,14 +826,14 @@
 					"\"$(SRCROOT)/libs/MagicalRecord/Mac App Unit Tests/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RssModerableFeedReader/RssModerableFeedReader-Prefix.pch";
-				INFOPLIST_FILE = "RssModerableFeedReader/RssModerableFeedReader-Info.plist";
+				GCC_PREFIX_HEADER = "ModerableFeedReader/ModerableFeedReader-Prefix.pch";
+				INFOPLIST_FILE = "ModerableFeedReader/ModerableFeedReader-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/libs/MagicalRecord/iOS App Unit Tests/Frameworks/OCMockLibrary\"",
 					"\"$(SRCROOT)/libs/MagicalRecord/Mac App Unit Tests/Frameworks/OCMockLibrary\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ModerableFeedReader;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -847,9 +847,9 @@
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RssModerableFeedReader/RssModerableFeedReader-Prefix.pch";
-				INFOPLIST_FILE = "RssModerableFeedReaderTests/RssModerableFeedReaderTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ModerableFeedReader/ModerableFeedReader-Prefix.pch";
+				INFOPLIST_FILE = "ModerableFeedReaderTests/ModerableFeedReaderTests-Info.plist";
+				PRODUCT_NAME = ModerableFeedReaderTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -864,9 +864,9 @@
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RssModerableFeedReader/RssModerableFeedReader-Prefix.pch";
-				INFOPLIST_FILE = "RssModerableFeedReaderTests/RssModerableFeedReaderTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ModerableFeedReader/ModerableFeedReader-Prefix.pch";
+				INFOPLIST_FILE = "ModerableFeedReaderTests/ModerableFeedReaderTests-Info.plist";
+				PRODUCT_NAME = ModerableFeedReaderTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -875,7 +875,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		579A0AB214C30D3B001F9778 /* Build configuration list for PBXProject "RssModerableFeedReader" */ = {
+		579A0AB214C30D3B001F9778 /* Build configuration list for PBXProject "ModerableFeedReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				579A0AF714C30D3C001F9778 /* Debug */,
@@ -884,7 +884,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		579A0AF914C30D3C001F9778 /* Build configuration list for PBXNativeTarget "RssModerableFeedReader" */ = {
+		579A0AF914C30D3C001F9778 /* Build configuration list for PBXNativeTarget "ModerableFeedReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				579A0AFA14C30D3C001F9778 /* Debug */,
@@ -892,7 +892,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		579A0AFC14C30D3C001F9778 /* Build configuration list for PBXNativeTarget "RssModerableFeedReaderTests" */ = {
+		579A0AFC14C30D3C001F9778 /* Build configuration list for PBXNativeTarget "ModerableFeedReaderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				579A0AFD14C30D3C001F9778 /* Debug */,
