@@ -98,15 +98,31 @@
 {
     [Signature fetchFromUrl:apiURL];
     [self waitForCompletion:3.0];
-    
     NSAssert([[Signature findAll] count]>0, @"signatures not fetched");
     
     [Post fetchFromUrl:apiURL];
     [self waitForCompletion:3.0];
     NSAssert([[Post findAll] count]>0, @"posts not fetched");
     
-    NSLog(@"%@", [Post findAll]);
     
+    NSAssert([[Post fetchPublishedPosts:[NSManagedObjectContext defaultContext]] count]>0, @"no published posts");
+    
+    
+}
+
+
+- (void)testPublishedPostsFetching2
+{
+    
+    [Post fetchFromUrl:apiURL];
+    [self waitForCompletion:3.0];
+    NSAssert([[Post findAll] count]>0, @"posts not fetched");
+    
+    [Signature fetchFromUrl:apiURL];
+    [self waitForCompletion:3.0];
+    NSAssert([[Signature findAll] count]>0, @"signatures not fetched");
+    
+        
     NSAssert([[Post fetchPublishedPosts:[NSManagedObjectContext defaultContext]] count]>0, @"no published posts");
     
     

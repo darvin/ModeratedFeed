@@ -1,5 +1,7 @@
 #import "Signature.h"
 #import "AFNetworking.h"
+#import "Post.h"
+
 @implementation Signature
 + (NSOperationQueue*) queue {
     static NSOperationQueue *queue;
@@ -27,6 +29,8 @@
                 signature.hashString = hashString;
             }
             signature.timestamp = [NSNumber numberWithInt: [[JSON valueForKey:hashString] intValue]];
+            Post* post = [Post findFirstByAttribute:@"hashString" withValue:hashString];
+            signature.post = post;
         }
     } failure:nil];
     
