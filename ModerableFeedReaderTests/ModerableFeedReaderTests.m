@@ -6,18 +6,18 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "RssModerableFeedReaderTests.h"
+#import "ModerableFeedReaderTests.h"
 #import "Post.h"
 #import "Signature.h"
 #import "Tag.h"
 #import "Author.h"
 
-@interface RssModerableFeedReaderTests () 
+@interface ModerableFeedReaderTests () 
 
 - (BOOL)waitForCompletion:(NSTimeInterval)timeoutSecs;
 @end
 
-@implementation RssModerableFeedReaderTests
+@implementation ModerableFeedReaderTests
 - (BOOL)waitForCompletion:(NSTimeInterval)timeoutSecs
 {
 	NSDate	*timeoutDate = [NSDate dateWithTimeIntervalSinceNow:timeoutSecs];

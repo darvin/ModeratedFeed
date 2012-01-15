@@ -22,7 +22,7 @@
 		579A0AEA14C30D3C001F9778 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579A0ABC14C30D3C001F9778 /* UIKit.framework */; };
 		579A0AEB14C30D3C001F9778 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579A0ABE14C30D3C001F9778 /* Foundation.framework */; };
 		579A0AF314C30D3C001F9778 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 579A0AF114C30D3C001F9778 /* InfoPlist.strings */; };
-		579A0AF614C30D3C001F9778 /* RssModerableFeedReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0AF514C30D3C001F9778 /* RssModerableFeedReaderTests.m */; };
+		579A0AF614C30D3C001F9778 /* ModerableFeedReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0AF514C30D3C001F9778 /* ModerableFeedReaderTests.m */; };
 		579A0B1614C30EC3001F9778 /* _Author.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B0514C30EC3001F9778 /* _Author.m */; };
 		579A0B1714C30EC3001F9778 /* _Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B0714C30EC3001F9778 /* _Post.m */; };
 		579A0B1814C30EC3001F9778 /* _Signature.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B0914C30EC3001F9778 /* _Signature.m */; };
@@ -106,8 +106,8 @@
 		579A0AE814C30D3C001F9778 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		579A0AF014C30D3C001F9778 /* ModerableFeedReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModerableFeedReaderTests-Info.plist"; sourceTree = "<group>"; };
 		579A0AF214C30D3C001F9778 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		579A0AF414C30D3C001F9778 /* RssModerableFeedReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RssModerableFeedReaderTests.h; sourceTree = "<group>"; };
-		579A0AF514C30D3C001F9778 /* RssModerableFeedReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RssModerableFeedReaderTests.m; sourceTree = "<group>"; };
+		579A0AF414C30D3C001F9778 /* ModerableFeedReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModerableFeedReaderTests.h; sourceTree = "<group>"; };
+		579A0AF514C30D3C001F9778 /* ModerableFeedReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModerableFeedReaderTests.m; sourceTree = "<group>"; };
 		579A0B0414C30EC3001F9778 /* _Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Author.h; path = Classes/_Author.h; sourceTree = "<group>"; };
 		579A0B0514C30EC3001F9778 /* _Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Author.m; path = Classes/_Author.m; sourceTree = "<group>"; };
 		579A0B0614C30EC3001F9778 /* _Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Post.h; path = Classes/_Post.h; sourceTree = "<group>"; };
@@ -299,8 +299,8 @@
 		579A0AEE14C30D3C001F9778 /* ModerableFeedReaderTests */ = {
 			isa = PBXGroup;
 			children = (
-				579A0AF414C30D3C001F9778 /* RssModerableFeedReaderTests.h */,
-				579A0AF514C30D3C001F9778 /* RssModerableFeedReaderTests.m */,
+				579A0AF414C30D3C001F9778 /* ModerableFeedReaderTests.h */,
+				579A0AF514C30D3C001F9778 /* ModerableFeedReaderTests.m */,
 				579A0AEF14C30D3C001F9778 /* Supporting Files */,
 			);
 			path = ModerableFeedReaderTests;
@@ -699,7 +699,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				579A0AF614C30D3C001F9778 /* RssModerableFeedReaderTests.m in Sources */,
+				579A0AF614C30D3C001F9778 /* ModerableFeedReaderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

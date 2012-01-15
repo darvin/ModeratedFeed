@@ -8,7 +8,7 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface RssModerableFeedReaderTests : SenTestCase{
+@interface ModerableFeedReaderTests : SenTestCase{
     NSURL *apiURL;
     BOOL done;
 }
