@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="878" systemVersion="11C74" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Author" representedClassName="Author" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="posts" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="author" inverseEntity="Post" syncable="YES"/>
+    </entity>
+    <entity name="Post" representedClassName="Post" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="hashString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="author" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Author" inverseName="posts" inverseEntity="Author" syncable="YES"/>
+        <relationship name="signature" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Signature" inverseName="post" inverseEntity="Signature" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="posts" inverseEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="Signature" representedClassName="Signature" syncable="YES">
+        <attribute name="hashString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="post" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="signature" inverseEntity="Post" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="tags" inverseEntity="Post" syncable="YES"/>
+    </entity>
+    <fetchRequest name="LastSignature" entity="Signature"/>
+    <fetchRequest name="PostByAuthor" entity="Post" predicateString="url != &quot;null&quot;"/>
+    <fetchRequest name="PublishedPosts" entity="Post" predicateString="signature!=nil"/>
+    <elements>
+        <element name="Author" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Post" positionX="160" positionY="192" width="128" height="150"/>
+        <element name="Signature" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Tag" positionX="160" positionY="192" width="128" height="75"/>
+    </elements>
+</model>

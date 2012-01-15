@@ -1,0 +1,9 @@
+[submodule "libs/AFNetworking"]
+	path = libs/AFNetworking
+	url = git://github.com/AFNetworking/AFNetworking.git
+[submodule "libs/MWFeedParser"]
+	path = libs/MWFeedParser
+	url = git://github.com/darvin/MWFeedParser.git
+[submodule "libs/MagicalRecord"]
+	path = libs/MagicalRecord
+	url = git://github.com/magicalpanda/MagicalRecord.git

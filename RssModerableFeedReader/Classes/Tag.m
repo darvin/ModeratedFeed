@@ -1,0 +1,37 @@
+#import "Tag.h"
+#import "AFNetworking.h"
+@implementation Tag
+
+
++ (NSOperationQueue*) queue {
+    static NSOperationQueue *queue;
+    
+    @synchronized(self)
+    {
+        if (!queue)
+            queue = [[NSOperationQueue alloc] init];
+        
+        return queue;
+    }
+}
++ (void) fetchFromUrl:(NSURL*)url {
+    
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[url URLByAppendingPathComponent: @"tags"]];
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+        
+        Tag* tag;
+        for (NSString* tagName in JSON) {
+            tag = [self findFirstByAttribute:@"name" withValue:tagName];
+            if (!tag) {
+                tag = [self createEntity];
+                tag.name = tagName;
+                
+            }
+        }
+    } failure:nil];
+    
+    [[self queue] addOperation:operation];
+}
+
+@end
