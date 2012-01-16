@@ -5,7 +5,9 @@
 
 
 extern const struct AuthorAttributes {
+	__unsafe_unretained NSString *imageURL;
 	__unsafe_unretained NSString *name;
+	__unsafe_unretained NSString *subtitle;
 	__unsafe_unretained NSString *title;
 	__unsafe_unretained NSString *url;
 } AuthorAttributes;
@@ -23,6 +25,8 @@ extern const struct AuthorFetchedProperties {
 
 
 
+
+
 @interface AuthorID : NSManagedObjectID {}
 @end
 
@@ -35,10 +39,26 @@ extern const struct AuthorFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSString *imageURL;
+
+
+//- (BOOL)validateImageURL:(id*)value_ error:(NSError**)error_;
+
+
+
+
 @property (nonatomic, strong) NSString *name;
 
 
 //- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
+
+
+
+
+@property (nonatomic, strong) NSString *subtitle;
+
+
+//- (BOOL)validateSubtitle:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -76,8 +96,20 @@ extern const struct AuthorFetchedProperties {
 @interface _Author (CoreDataGeneratedPrimitiveAccessors)
 
 
+- (NSString*)primitiveImageURL;
+- (void)setPrimitiveImageURL:(NSString*)value;
+
+
+
+
 - (NSString*)primitiveName;
 - (void)setPrimitiveName:(NSString*)value;
+
+
+
+
+- (NSString*)primitiveSubtitle;
+- (void)setPrimitiveSubtitle:(NSString*)value;
 
 
 

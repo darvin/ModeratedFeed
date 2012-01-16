@@ -7,6 +7,7 @@
 #import "Author.h"
 #import "Tag.h"
 #import "Signature.h"
+#import "NSString+HTML.h"
 
 
 @interface Post() {
@@ -51,8 +52,6 @@
 }
 
 + (id) createEntityWithFeedItem:(MWFeedItem*) item {
-    NSLog(@"------%@", [NSManagedObjectContext defaultContext]);
-
     NSString * stringToHash = [[NSString stringWithFormat: @"%@%@%@", item.title,  item.sourceLink, item.summary] fullStrippedString]; 
     NSString * hashString = [stringToHash MD5String];
     Post* post = [self findFirstByAttribute:@"hashString" withValue:hashString];
@@ -61,9 +60,6 @@
 
         post.hashString = hashString;
     }
-    post.content = item.summary;
-    post.title = item.title;
-    post.url = item.link;
     
     
     Tag* tag;
@@ -80,9 +76,14 @@
         post.signature = signature;
     }
     
-    Author *author = [Author createEntityWithFeedItem:item];
-    post.author = author;
+    Author *author = [Author findFirstByAttribute:@"url" withValue:item.sourceLink];
+    [post setAuthor:author];
     
+    
+    
+    post.content = item.summary;
+    post.title = [item.title stringByConvertingHTMLToPlainText];
+    post.url = item.link;
     return post;
     
 }

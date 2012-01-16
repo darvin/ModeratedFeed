@@ -11,7 +11,10 @@
 #import "Post.h"
 #import "Signature.h"
 #import "Tag.h"
+#import "Author.h"
 #import "PostTableViewCell.h"
+#import "PostController.h"
+#import "SKAppDelegate.h"
 
 @implementation PostsListController{
     __strong FRCFetchedResultsTableViewDataSource *fetchedResultsDS;
@@ -34,7 +37,33 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+
+- (void) setupDataSource {
+    SKAppDelegate* app = (SKAppDelegate*)[UIApplication sharedApplication].delegate;
+    NSURL* apiURL = app.apiURL;
+
+    [Signature fetchFromUrl:apiURL];
+
+    [Post fetchFromUrl:apiURL];
+    
+    
+    fetchedResultsDS = [[FRCFetchedResultsTableViewDataSource alloc] init];
+    fetchedResultsDS.tableView = self.tableView;
+    fetchedResultsDS.cellClass = [PostTableViewCell class];
+    fetchedResultsDS.managedObjectContext = [NSManagedObjectContext defaultContext];
+    NSFetchRequest  *request = [Post requestAllSortedBy:@"date" ascending:YES withPredicate:[NSPredicate predicateWithFormat:@"( signature != nil )"]];
+    
+    [request setFetchBatchSize:20];
+    
+    fetchedResultsDS.fetchRequest = request;
+    
+    self.tableView.dataSource = fetchedResultsDS;
+}
+
 #pragma mark - View lifecycle
+
+
+
 
 - (void)viewDidLoad
 {
@@ -45,22 +74,12 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    [Signature fetchFromUrl:[NSURL URLWithString:@"http://localhost:8080/api"]];
+    SKAppDelegate* app = (SKAppDelegate*)[UIApplication sharedApplication].delegate;
+    NSURL* apiURL = app.apiURL;
+    [Author fetchFromUrl:apiURL success: ^(NSArray* fetchedEntitles) {
+        [self setupDataSource];
+    }];
 
-    [Post fetchFromUrl:[NSURL URLWithString:@"http://localhost:8080/api"]];
-    
-    
-    fetchedResultsDS = [[FRCFetchedResultsTableViewDataSource alloc] init];
-    fetchedResultsDS.tableView = self.tableView;
-    fetchedResultsDS.cellClass = [PostTableViewCell class];
-    fetchedResultsDS.managedObjectContext = [NSManagedObjectContext defaultContext];
-    NSFetchRequest  *request = [Post requestAllSortedBy:@"date" ascending:YES withPredicate:[NSPredicate predicateWithFormat:@"( signature != nil )"]];
-
-    [request setFetchBatchSize:20];
-    
-    fetchedResultsDS.fetchRequest = request;
-
-    self.tableView.dataSource = fetchedResultsDS;
     
 }
 
@@ -73,7 +92,6 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-
     [super viewWillAppear:animated];
 }
 
@@ -102,13 +120,24 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+    Post *post = [fetchedResultsDS objectAtIndexPath:path];
+    NSLog(@"%@", post.author);
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Assume self.view is the table view
+    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+    Post *post = [fetchedResultsDS objectAtIndexPath:path];
+    [segue.destinationViewController setPost:post];
 }
 
 @end

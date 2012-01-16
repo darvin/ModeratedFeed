@@ -10,11 +10,18 @@
 
 @implementation SKAppDelegate
 
-@synthesize window = _window;
+@synthesize window = _window, apiURL;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [MagicalRecordHelpers setupAutoMigratingCoreDataStack];
+    [MagicalRecordHelpers setupCoreDataStackWithInMemoryStore];
+    
+#ifdef LOCAL_SERVER_DEBUG
+    self.apiURL = [NSURL URLWithString:@"http://localhost:8080/api"];
+#else
+    self.apiURL = [NSURL URLWithString:@"http://moderable-feed.appspot.com/api"];
+#endif
+    
     return YES;
 }
 							

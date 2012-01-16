@@ -33,7 +33,11 @@
 
 - (void)setUp
 {
+#ifdef LOCAL_SERVER_DEBUG
     apiURL = [NSURL URLWithString:@"http://localhost:8080/api"];
+#else
+    apiURL = [NSURL URLWithString:@"http://moderable-feed.appspot.com/api"];
+#endif    
     [MagicalRecordHelpers setupCoreDataStackWithInMemoryStore];
 }
 

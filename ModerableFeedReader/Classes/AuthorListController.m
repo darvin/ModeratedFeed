@@ -1,18 +1,17 @@
 //
-//  TagListController.m
+//  AuthorListController.m
 //  ModerableFeedReader
 //
-//  Created by Sergey Klimov on 1/15/12.
+//  Created by Sergey Klimov on 1/16/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "TagListController.h"
-#import "Tag.h"
+#import "AuthorListController.h"
+#import "Author.h"
+#import "AuthorTableViewCell.h"
 #import "FRCFetchedResultsTableViewDataSource.h"
-#import "TagTableViewCell.h"
 #import "SKAppDelegate.h"
-
-@implementation TagListController{
+@implementation AuthorListController{
     __strong FRCFetchedResultsTableViewDataSource *fetchedResultsDS;
 }
 
@@ -44,25 +43,21 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
     SKAppDelegate* app = (SKAppDelegate*)[UIApplication sharedApplication].delegate;
     NSURL* apiURL = app.apiURL;
-    [Tag fetchFromUrl:apiURL];
-    
+//    [Author fetchFromUrl:apiURL success:nil];
     
     fetchedResultsDS = [[FRCFetchedResultsTableViewDataSource alloc] init];
     fetchedResultsDS.tableView = self.tableView;
-    fetchedResultsDS.cellClass = [TagTableViewCell class];
+    fetchedResultsDS.cellClass = [AuthorTableViewCell class];
     fetchedResultsDS.managedObjectContext = [NSManagedObjectContext defaultContext];
-    NSFetchRequest  *request = [Tag requestAllSortedBy:@"name" ascending:NO];
+    NSFetchRequest  *request = [Author requestAllSortedBy:@"name" ascending:NO];
     
-//    [request setFetchBatchSize:20];
+    [request setFetchBatchSize:20];
     
     fetchedResultsDS.fetchRequest = request;
     
     self.tableView.dataSource = fetchedResultsDS;
-
-    
 }
 
 - (void)viewDidUnload
@@ -100,6 +95,33 @@
 
 #pragma mark - Table view data source
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    // Configure the cell...
+    
+    return cell;
+}
 
 /*
 // Override to support conditional editing of the table view.

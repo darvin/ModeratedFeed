@@ -4,7 +4,9 @@
 #import "_Author.h"
 
 const struct AuthorAttributes AuthorAttributes = {
+	.imageURL = @"imageURL",
 	.name = @"name",
+	.subtitle = @"subtitle",
 	.title = @"title",
 	.url = @"url",
 };
@@ -49,7 +51,21 @@ const struct AuthorFetchedProperties AuthorFetchedProperties = {
 
 
 
+@dynamic imageURL;
+
+
+
+
+
+
 @dynamic name;
+
+
+
+
+
+
+@dynamic subtitle;
 
 
 

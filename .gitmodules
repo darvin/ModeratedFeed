@@ -10,3 +10,6 @@
 [submodule "libs/FRCTableViewDataSources"]
 	path = libs/FRCTableViewDataSources
 	url = git://github.com/freerangecode/FRCTableViewDataSources.git
+[submodule "libs/SDWebImage"]
+	path = libs/SDWebImage
+	url = git://github.com/rs/SDWebImage.git

@@ -8,15 +8,18 @@
 
 #import "PostTableViewCell.h"
 #import "Post.h"
+#import "Author.h"
+#import "UIImageView+WebCache.h"
 @implementation PostTableViewCell
 
 
-@synthesize label;
+@synthesize title, authorName, authorPicture;
 
 - (void)configureWithObject:(Post *)post {
 	
 	
-	self.label.text = post.title;
+	self.title.text = post.title;
+    self.authorName.text = post.author.name;
 }
 
 @end
