@@ -14,7 +14,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [MagicalRecordHelpers setupAutoMigratingCoreDataStack];
     return YES;
 }
 							
@@ -55,6 +55,8 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+    
+    [MagicalRecordHelpers cleanUp];
 }
 
 @end

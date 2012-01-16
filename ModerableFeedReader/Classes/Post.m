@@ -51,11 +51,14 @@
 }
 
 + (id) createEntityWithFeedItem:(MWFeedItem*) item {
+    NSLog(@"------%@", [NSManagedObjectContext defaultContext]);
+
     NSString * stringToHash = [[NSString stringWithFormat: @"%@%@%@", item.title,  item.sourceLink, item.summary] fullStrippedString]; 
     NSString * hashString = [stringToHash MD5String];
     Post* post = [self findFirstByAttribute:@"hashString" withValue:hashString];
     if (!post) {
         post = [self createEntity];
+
         post.hashString = hashString;
     }
     post.content = item.summary;

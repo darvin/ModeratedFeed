@@ -7,3 +7,6 @@
 [submodule "libs/MagicalRecord"]
 	path = libs/MagicalRecord
 	url = git://github.com/magicalpanda/MagicalRecord.git
+[submodule "libs/FRCTableViewDataSources"]
+	path = libs/FRCTableViewDataSources
+	url = git://github.com/freerangecode/FRCTableViewDataSources.git

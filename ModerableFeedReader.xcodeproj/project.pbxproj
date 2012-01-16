@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5793F9C214C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F9AD14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSource.m */; };
+		5793F9C314C3759800B87EC9 /* FRCFetchedResultsTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F9AF14C3759800B87EC9 /* FRCFetchedResultsTableViewDataSource.m */; };
+		5793F9C414C3759800B87EC9 /* FRCObjectTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F9B114C3759800B87EC9 /* FRCObjectTableViewDataSource.m */; };
+		5793F9C514C3759800B87EC9 /* FRCParentTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F9B314C3759800B87EC9 /* FRCParentTableViewDataSource.m */; };
+		5793F9C614C3759800B87EC9 /* FRCSplitTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F9B514C3759800B87EC9 /* FRCSplitTableViewDataSource.m */; };
+		5793F9C714C3759800B87EC9 /* FRCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F9B714C3759800B87EC9 /* FRCTableViewCell.m */; };
+		5793F9C814C3759800B87EC9 /* FRCTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F9B914C3759800B87EC9 /* FRCTableViewDataSource.m */; };
+		5793F9C914C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 5793F9BB14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator.png */; };
+		5793F9CA14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5793F9BC14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator@2x.png */; };
+		5793F9CB14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 5793F9BD14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted.png */; };
+		5793F9CC14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5793F9BE14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted@2x.png */; };
+		5793F9CE14C3759800B87EC9 /* UITableView+FRCTableViewDataSources.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F9C114C3759800B87EC9 /* UITableView+FRCTableViewDataSources.m */; };
+		5793F9D314C3761300B87EC9 /* PostsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F9D114C3761300B87EC9 /* PostsListController.m */; };
+		5793F9E414C37B0700B87EC9 /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F9E314C37B0700B87EC9 /* PostTableViewCell.m */; };
+		5793F9EB14C3E7AC00B87EC9 /* TagListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F9EA14C3E7AC00B87EC9 /* TagListController.m */; };
+		5793F9EE14C3E7CA00B87EC9 /* TagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F9ED14C3E7CA00B87EC9 /* TagTableViewCell.m */; };
 		579A0ABD14C30D3C001F9778 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579A0ABC14C30D3C001F9778 /* UIKit.framework */; };
 		579A0ABF14C30D3C001F9778 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579A0ABE14C30D3C001F9778 /* Foundation.framework */; };
 		579A0AC114C30D3C001F9778 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579A0AC014C30D3C001F9778 /* CoreGraphics.framework */; };
@@ -27,16 +43,14 @@
 		579A0B1714C30EC3001F9778 /* _Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B0714C30EC3001F9778 /* _Post.m */; };
 		579A0B1814C30EC3001F9778 /* _Signature.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B0914C30EC3001F9778 /* _Signature.m */; };
 		579A0B1914C30EC3001F9778 /* _Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B0B14C30EC3001F9778 /* _Tag.m */; };
-		579A0B1A14C30EC3001F9778 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B0D14C30EC3001F9778 /* Author.m */; };
-		579A0B1B14C30EC3001F9778 /* FeedParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B0F14C30EC3001F9778 /* FeedParserDelegate.m */; };
-		579A0B1C14C30EC3001F9778 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B1114C30EC3001F9778 /* Post.m */; };
-		579A0B1D14C30EC3001F9778 /* Signature.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B1314C30EC3001F9778 /* Signature.m */; };
-		579A0B1E14C30EC3001F9778 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B1514C30EC3001F9778 /* Tag.m */; };
+		579A0B1A14C30EC3001F9778 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B0D14C30EC3001F9778 /* Author.m */; settings = {COMPILER_FLAGS = "-DMR_SHORTHAND"; }; };
+		579A0B1B14C30EC3001F9778 /* FeedParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B0F14C30EC3001F9778 /* FeedParserDelegate.m */; settings = {COMPILER_FLAGS = "-DMR_SHORTHAND"; }; };
+		579A0B1C14C30EC3001F9778 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B1114C30EC3001F9778 /* Post.m */; settings = {COMPILER_FLAGS = "-DMR_SHORTHAND"; }; };
+		579A0B1D14C30EC3001F9778 /* Signature.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B1314C30EC3001F9778 /* Signature.m */; settings = {COMPILER_FLAGS = "-DMR_SHORTHAND"; }; };
+		579A0B1E14C30EC3001F9778 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B1514C30EC3001F9778 /* Tag.m */; settings = {COMPILER_FLAGS = "-DMR_SHORTHAND"; }; };
 		579A0B2514C30EDB001F9778 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B2014C30EDB001F9778 /* NSString+MD5.m */; };
 		579A0B2614C30EDB001F9778 /* NSString+Strip.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B2214C30EDB001F9778 /* NSString+Strip.m */; };
 		579A0B2714C30EDB001F9778 /* SKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B2414C30EDB001F9778 /* SKAppDelegate.m */; };
-		579A0B2C14C30EED001F9778 /* SKFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B2914C30EED001F9778 /* SKFirstViewController.m */; };
-		579A0B2D14C30EED001F9778 /* SKSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B2B14C30EED001F9778 /* SKSecondViewController.m */; };
 		579A0B3014C30F06001F9778 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B2E14C30F06001F9778 /* Model.xcdatamodeld */; };
 		579A0B3514C30F35001F9778 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579A0B3314C30F23001F9778 /* QuartzCore.framework */; };
 		579A0B3614C30F35001F9778 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579A0B3114C30F1D001F9778 /* CoreData.framework */; };
@@ -88,6 +102,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5793F9AC14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCCollapsableSectionTableViewDataSource.h; sourceTree = "<group>"; };
+		5793F9AD14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCCollapsableSectionTableViewDataSource.m; sourceTree = "<group>"; };
+		5793F9AE14C3759800B87EC9 /* FRCFetchedResultsTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCFetchedResultsTableViewDataSource.h; sourceTree = "<group>"; };
+		5793F9AF14C3759800B87EC9 /* FRCFetchedResultsTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCFetchedResultsTableViewDataSource.m; sourceTree = "<group>"; };
+		5793F9B014C3759800B87EC9 /* FRCObjectTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCObjectTableViewDataSource.h; sourceTree = "<group>"; };
+		5793F9B114C3759800B87EC9 /* FRCObjectTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCObjectTableViewDataSource.m; sourceTree = "<group>"; };
+		5793F9B214C3759800B87EC9 /* FRCParentTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCParentTableViewDataSource.h; sourceTree = "<group>"; };
+		5793F9B314C3759800B87EC9 /* FRCParentTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCParentTableViewDataSource.m; sourceTree = "<group>"; };
+		5793F9B414C3759800B87EC9 /* FRCSplitTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCSplitTableViewDataSource.h; sourceTree = "<group>"; };
+		5793F9B514C3759800B87EC9 /* FRCSplitTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCSplitTableViewDataSource.m; sourceTree = "<group>"; };
+		5793F9B614C3759800B87EC9 /* FRCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCTableViewCell.h; sourceTree = "<group>"; };
+		5793F9B714C3759800B87EC9 /* FRCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCTableViewCell.m; sourceTree = "<group>"; };
+		5793F9B814C3759800B87EC9 /* FRCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCTableViewDataSource.h; sourceTree = "<group>"; };
+		5793F9B914C3759800B87EC9 /* FRCTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCTableViewDataSource.m; sourceTree = "<group>"; };
+		5793F9BB14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FRCCollapsableSectionTableViewDataSourceDisclosureIndicator.png; sourceTree = "<group>"; };
+		5793F9BC14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FRCCollapsableSectionTableViewDataSourceDisclosureIndicator@2x.png"; sourceTree = "<group>"; };
+		5793F9BD14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted.png; sourceTree = "<group>"; };
+		5793F9BE14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted@2x.png"; sourceTree = "<group>"; };
+		5793F9C014C3759800B87EC9 /* UITableView+FRCTableViewDataSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FRCTableViewDataSources.h"; sourceTree = "<group>"; };
+		5793F9C114C3759800B87EC9 /* UITableView+FRCTableViewDataSources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FRCTableViewDataSources.m"; sourceTree = "<group>"; };
+		5793F9D014C3761300B87EC9 /* PostsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostsListController.h; path = Classes/PostsListController.h; sourceTree = "<group>"; };
+		5793F9D114C3761300B87EC9 /* PostsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostsListController.m; path = Classes/PostsListController.m; sourceTree = "<group>"; };
+		5793F9E214C37B0700B87EC9 /* PostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostTableViewCell.h; path = Classes/PostTableViewCell.h; sourceTree = "<group>"; };
+		5793F9E314C37B0700B87EC9 /* PostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostTableViewCell.m; path = Classes/PostTableViewCell.m; sourceTree = "<group>"; };
+		5793F9E914C3E7AC00B87EC9 /* TagListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TagListController.h; path = Classes/TagListController.h; sourceTree = "<group>"; };
+		5793F9EA14C3E7AC00B87EC9 /* TagListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TagListController.m; path = Classes/TagListController.m; sourceTree = "<group>"; };
+		5793F9EC14C3E7CA00B87EC9 /* TagTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TagTableViewCell.h; path = Classes/TagTableViewCell.h; sourceTree = "<group>"; };
+		5793F9ED14C3E7CA00B87EC9 /* TagTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TagTableViewCell.m; path = Classes/TagTableViewCell.m; sourceTree = "<group>"; };
 		579A0AB814C30D3B001F9778 /* ModerableFeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModerableFeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		579A0ABC14C30D3C001F9778 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		579A0ABE14C30D3C001F9778 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -132,10 +174,6 @@
 		579A0B2214C30EDB001F9778 /* NSString+Strip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Strip.m"; path = "Classes/NSString+Strip.m"; sourceTree = "<group>"; };
 		579A0B2314C30EDB001F9778 /* SKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKAppDelegate.h; path = Classes/SKAppDelegate.h; sourceTree = "<group>"; };
 		579A0B2414C30EDB001F9778 /* SKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKAppDelegate.m; path = Classes/SKAppDelegate.m; sourceTree = "<group>"; };
-		579A0B2814C30EED001F9778 /* SKFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKFirstViewController.h; path = Classes/SKFirstViewController.h; sourceTree = "<group>"; };
-		579A0B2914C30EED001F9778 /* SKFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKFirstViewController.m; path = Classes/SKFirstViewController.m; sourceTree = "<group>"; };
-		579A0B2A14C30EED001F9778 /* SKSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKSecondViewController.h; path = Classes/SKSecondViewController.h; sourceTree = "<group>"; };
-		579A0B2B14C30EED001F9778 /* SKSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKSecondViewController.m; path = Classes/SKSecondViewController.m; sourceTree = "<group>"; };
 		579A0B2F14C30F06001F9778 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		579A0B3114C30F1D001F9778 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		579A0B3314C30F23001F9778 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -241,6 +279,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5793F9AB14C3759800B87EC9 /* FRCTableViewDataSources */ = {
+			isa = PBXGroup;
+			children = (
+				5793F9AC14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSource.h */,
+				5793F9AD14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSource.m */,
+				5793F9AE14C3759800B87EC9 /* FRCFetchedResultsTableViewDataSource.h */,
+				5793F9AF14C3759800B87EC9 /* FRCFetchedResultsTableViewDataSource.m */,
+				5793F9B014C3759800B87EC9 /* FRCObjectTableViewDataSource.h */,
+				5793F9B114C3759800B87EC9 /* FRCObjectTableViewDataSource.m */,
+				5793F9B214C3759800B87EC9 /* FRCParentTableViewDataSource.h */,
+				5793F9B314C3759800B87EC9 /* FRCParentTableViewDataSource.m */,
+				5793F9B414C3759800B87EC9 /* FRCSplitTableViewDataSource.h */,
+				5793F9B514C3759800B87EC9 /* FRCSplitTableViewDataSource.m */,
+				5793F9B614C3759800B87EC9 /* FRCTableViewCell.h */,
+				5793F9B714C3759800B87EC9 /* FRCTableViewCell.m */,
+				5793F9B814C3759800B87EC9 /* FRCTableViewDataSource.h */,
+				5793F9B914C3759800B87EC9 /* FRCTableViewDataSource.m */,
+				5793F9BA14C3759800B87EC9 /* Images */,
+				5793F9C014C3759800B87EC9 /* UITableView+FRCTableViewDataSources.h */,
+				5793F9C114C3759800B87EC9 /* UITableView+FRCTableViewDataSources.m */,
+			);
+			path = FRCTableViewDataSources;
+			sourceTree = "<group>";
+		};
+		5793F9BA14C3759800B87EC9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5793F9BB14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator.png */,
+				5793F9BC14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator@2x.png */,
+				5793F9BD14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted.png */,
+				5793F9BE14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		579A0AAD14C30D3B001F9778 = {
 			isa = PBXGroup;
 			children = (
@@ -366,10 +439,14 @@
 		579A0B0214C30D6E001F9778 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				579A0B2814C30EED001F9778 /* SKFirstViewController.h */,
-				579A0B2914C30EED001F9778 /* SKFirstViewController.m */,
-				579A0B2A14C30EED001F9778 /* SKSecondViewController.h */,
-				579A0B2B14C30EED001F9778 /* SKSecondViewController.m */,
+				5793F9D014C3761300B87EC9 /* PostsListController.h */,
+				5793F9D114C3761300B87EC9 /* PostsListController.m */,
+				5793F9E914C3E7AC00B87EC9 /* TagListController.h */,
+				5793F9EA14C3E7AC00B87EC9 /* TagListController.m */,
+				5793F9E214C37B0700B87EC9 /* PostTableViewCell.h */,
+				5793F9E314C37B0700B87EC9 /* PostTableViewCell.m */,
+				5793F9EC14C3E7CA00B87EC9 /* TagTableViewCell.h */,
+				5793F9ED14C3E7CA00B87EC9 /* TagTableViewCell.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -390,6 +467,7 @@
 		579A0B3714C30FCB001F9778 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				5793F9AB14C3759800B87EC9 /* FRCTableViewDataSources */,
 				579A0B3814C30FCB001F9778 /* AFNetworking */,
 				579A0B9614C30FCC001F9778 /* MagicalRecord */,
 				579A0C5914C30FCC001F9778 /* MWFeedParser */,
@@ -608,6 +686,10 @@
 				579A0ADA14C30D3C001F9778 /* first@2x.png in Resources */,
 				579A0ADF14C30D3C001F9778 /* second.png in Resources */,
 				579A0AE114C30D3C001F9778 /* second@2x.png in Resources */,
+				5793F9C914C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator.png in Resources */,
+				5793F9CA14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator@2x.png in Resources */,
+				5793F9CB14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted.png in Resources */,
+				5793F9CC14C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,8 +737,6 @@
 				579A0B2514C30EDB001F9778 /* NSString+MD5.m in Sources */,
 				579A0B2614C30EDB001F9778 /* NSString+Strip.m in Sources */,
 				579A0B2714C30EDB001F9778 /* SKAppDelegate.m in Sources */,
-				579A0B2C14C30EED001F9778 /* SKFirstViewController.m in Sources */,
-				579A0B2D14C30EED001F9778 /* SKSecondViewController.m in Sources */,
 				579A0B3014C30F06001F9778 /* Model.xcdatamodeld in Sources */,
 				579A0C8E14C30FCC001F9778 /* AFHTTPClient.m in Sources */,
 				579A0C8F14C30FCC001F9778 /* AFHTTPRequestOperation.m in Sources */,
@@ -692,6 +772,18 @@
 				579A0D1D14C30FCC001F9778 /* NSString+HTML.m in Sources */,
 				579A0D1E14C30FCC001F9778 /* NSString+XMLEntities.m in Sources */,
 				579A0D1F14C30FCC001F9778 /* RootViewController.m in Sources */,
+				5793F9C214C3759800B87EC9 /* FRCCollapsableSectionTableViewDataSource.m in Sources */,
+				5793F9C314C3759800B87EC9 /* FRCFetchedResultsTableViewDataSource.m in Sources */,
+				5793F9C414C3759800B87EC9 /* FRCObjectTableViewDataSource.m in Sources */,
+				5793F9C514C3759800B87EC9 /* FRCParentTableViewDataSource.m in Sources */,
+				5793F9C614C3759800B87EC9 /* FRCSplitTableViewDataSource.m in Sources */,
+				5793F9C714C3759800B87EC9 /* FRCTableViewCell.m in Sources */,
+				5793F9C814C3759800B87EC9 /* FRCTableViewDataSource.m in Sources */,
+				5793F9CE14C3759800B87EC9 /* UITableView+FRCTableViewDataSources.m in Sources */,
+				5793F9D314C3761300B87EC9 /* PostsListController.m in Sources */,
+				5793F9E414C37B0700B87EC9 /* PostTableViewCell.m in Sources */,
+				5793F9EB14C3E7AC00B87EC9 /* TagListController.m in Sources */,
+				5793F9EE14C3E7CA00B87EC9 /* TagTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -891,6 +983,7 @@
 				579A0AFB14C30D3C001F9778 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		579A0AFC14C30D3C001F9778 /* Build configuration list for PBXNativeTarget "ModerableFeedReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -899,6 +992,7 @@
 				579A0AFE14C30D3C001F9778 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
