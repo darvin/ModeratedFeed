@@ -6,7 +6,7 @@
         <attribute name="subtitle" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="posts" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="author" inverseEntity="Post" syncable="YES"/>
+        <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="author" inverseEntity="Post" syncable="YES"/>
     </entity>
     <entity name="Post" representedClassName="Post" syncable="YES">
         <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
@@ -30,9 +30,10 @@
     <fetchRequest name="LastSignature" entity="Signature"/>
     <fetchRequest name="PostByAuthor" entity="Post" predicateString="url != &quot;null&quot;"/>
     <fetchRequest name="PublishedPosts" entity="Post" predicateString="signature!=nil"/>
+    <fetchRequest name="test" entity="Post" predicateString="TRUEPREDICATE"/>
     <elements>
-        <element name="Author" positionX="160" positionY="192" width="128" height="90"/>
-        <element name="Post" positionX="160" positionY="192" width="128" height="165"/>
+        <element name="Author" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Post" positionX="160" positionY="192" width="128" height="150"/>
         <element name="Signature" positionX="160" positionY="192" width="128" height="90"/>
         <element name="Tag" positionX="160" positionY="192" width="128" height="75"/>
     </elements>

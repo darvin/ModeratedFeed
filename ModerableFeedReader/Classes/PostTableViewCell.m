@@ -20,6 +20,8 @@
 	
 	self.title.text = post.title;
     self.authorName.text = post.author.name;
+    if (post.author.imageURL)
+        [self.authorPicture setImageWithURL:[NSURL URLWithString:post.author.imageURL]];
 }
 
 @end

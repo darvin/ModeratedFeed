@@ -19,6 +19,9 @@
 @implementation PostsListController{
     __strong FRCFetchedResultsTableViewDataSource *fetchedResultsDS;
 }
+@synthesize relatedTo = _relatedTo;
+
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -42,22 +45,38 @@
     SKAppDelegate* app = (SKAppDelegate*)[UIApplication sharedApplication].delegate;
     NSURL* apiURL = app.apiURL;
 
-    [Signature fetchFromUrl:apiURL];
-
-    [Post fetchFromUrl:apiURL];
     
     
     fetchedResultsDS = [[FRCFetchedResultsTableViewDataSource alloc] init];
     fetchedResultsDS.tableView = self.tableView;
     fetchedResultsDS.cellClass = [PostTableViewCell class];
     fetchedResultsDS.managedObjectContext = [NSManagedObjectContext defaultContext];
-    NSFetchRequest  *request = [Post requestAllSortedBy:@"date" ascending:YES withPredicate:[NSPredicate predicateWithFormat:@"( signature != nil )"]];
     
-    [request setFetchBatchSize:20];
-    
-    fetchedResultsDS.fetchRequest = request;
+    id relatedTo = self.relatedTo;
+    fetchedResultsDS.fetchRequestBlock = (^{
+        NSPredicate *predicate;
+        
+        if (relatedTo) {
+            if ([relatedTo class]==[Tag class]) {
+               predicate = [NSPredicate predicateWithFormat:@"( signature != nil ) AND (ANY tags.name==%@)",((Tag*)relatedTo).name]; 
+                
+            }
+            else if ([relatedTo class]==[Author class]) {
+                predicate = [NSPredicate predicateWithFormat:@"( signature != nil ) AND (author.url=%@)", ((Author*)relatedTo).url]; 
+            }
+        } else {
+            predicate = [NSPredicate predicateWithFormat:@"( signature != nil )"];
+        }
+        
+        NSFetchRequest  *request = [Post requestAllSortedBy:@"date" ascending:YES withPredicate:predicate];
+        
+        [request setFetchBatchSize:20];
+        NSArray* res = [Post executeFetchRequest:request];
+        return request;
+    });
     
     self.tableView.dataSource = fetchedResultsDS;
+    [fetchedResultsDS loadFetchRequest];
 }
 
 #pragma mark - View lifecycle
@@ -76,9 +95,19 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     SKAppDelegate* app = (SKAppDelegate*)[UIApplication sharedApplication].delegate;
     NSURL* apiURL = app.apiURL;
+    [Tag fetchFromUrl:apiURL success: ^(NSArray* fetchedEntitles) {
+        [Post fetchFromUrl:apiURL];
+        
+    }];
+
+    
+    [Signature fetchFromUrl:apiURL];
+    
     [Author fetchFromUrl:apiURL success: ^(NSArray* fetchedEntitles) {
         [self setupDataSource];
+
     }];
+
 
     
 }
@@ -128,7 +157,7 @@
      */
     NSIndexPath *path = [self.tableView indexPathForSelectedRow];
     Post *post = [fetchedResultsDS objectAtIndexPath:path];
-    NSLog(@"%@", post.author);
+
 }
 
 

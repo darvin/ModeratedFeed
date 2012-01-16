@@ -11,6 +11,7 @@
 #import "FRCFetchedResultsTableViewDataSource.h"
 #import "TagTableViewCell.h"
 #import "SKAppDelegate.h"
+#import "PostsListController.h"
 
 @implementation TagListController{
     __strong FRCFetchedResultsTableViewDataSource *fetchedResultsDS;
@@ -47,7 +48,7 @@
     
     SKAppDelegate* app = (SKAppDelegate*)[UIApplication sharedApplication].delegate;
     NSURL* apiURL = app.apiURL;
-    [Tag fetchFromUrl:apiURL];
+    [Tag fetchFromUrl:apiURL success:nil];
     
     
     fetchedResultsDS = [[FRCFetchedResultsTableViewDataSource alloc] init];
@@ -151,6 +152,14 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Assume self.view is the table view
+    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+    Tag *tag = [fetchedResultsDS objectAtIndexPath:path];
+    [segue.destinationViewController setRelatedTo:tag];
 }
 
 @end

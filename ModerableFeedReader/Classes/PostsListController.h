@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PostsListController : UITableViewController
-
+@property (strong, nonatomic) id relatedTo;
 @end

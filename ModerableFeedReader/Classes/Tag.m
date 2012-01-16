@@ -14,12 +14,13 @@
         return queue;
     }
 }
-+ (void) fetchFromUrl:(NSURL*)url {
++ (void) fetchFromUrl:(NSURL*)url success:(void (^)(NSArray *fetchedEntitles))success {
     
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[url URLByAppendingPathComponent: @"tags"]];
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-        
+        NSMutableArray* tags = [NSMutableArray arrayWithCapacity:[JSON count]];
+
         Tag* tag;
         for (NSString* tagName in JSON) {
             tag = [self findFirstByAttribute:@"name" withValue:tagName];
@@ -28,7 +29,11 @@
                 tag.name = tagName;
                 
             }
+            [tags addObject:tag];
         }
+        
+        if(success)
+            success(tags);
     } failure:nil];
     
     [[self queue] addOperation:operation];

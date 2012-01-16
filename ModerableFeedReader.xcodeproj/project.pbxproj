@@ -45,6 +45,7 @@
 		5793FA3014C3FE1D00B87EC9 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793FA2314C3FE1D00B87EC9 /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5793FA3614C408F700B87EC9 /* AuthorListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793FA3514C408F600B87EC9 /* AuthorListController.m */; };
 		5793FA3914C4090F00B87EC9 /* AuthorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793FA3814C4090F00B87EC9 /* AuthorTableViewCell.m */; };
+		5793FA4614C44BF600B87EC9 /* ResetNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793FA4514C44BF500B87EC9 /* ResetNavigationController.m */; };
 		579A0ABD14C30D3C001F9778 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579A0ABC14C30D3C001F9778 /* UIKit.framework */; };
 		579A0ABF14C30D3C001F9778 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579A0ABE14C30D3C001F9778 /* Foundation.framework */; };
 		579A0AC114C30D3C001F9778 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579A0AC014C30D3C001F9778 /* CoreGraphics.framework */; };
@@ -184,6 +185,8 @@
 		5793FA3514C408F600B87EC9 /* AuthorListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthorListController.m; path = Classes/AuthorListController.m; sourceTree = "<group>"; };
 		5793FA3714C4090E00B87EC9 /* AuthorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthorTableViewCell.h; path = Classes/AuthorTableViewCell.h; sourceTree = "<group>"; };
 		5793FA3814C4090F00B87EC9 /* AuthorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthorTableViewCell.m; path = Classes/AuthorTableViewCell.m; sourceTree = "<group>"; };
+		5793FA4414C44BF400B87EC9 /* ResetNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResetNavigationController.h; path = Classes/ResetNavigationController.h; sourceTree = "<group>"; };
+		5793FA4514C44BF500B87EC9 /* ResetNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResetNavigationController.m; path = Classes/ResetNavigationController.m; sourceTree = "<group>"; };
 		579A0AB814C30D3B001F9778 /* ModerableFeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModerableFeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		579A0ABC14C30D3C001F9778 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		579A0ABE14C30D3C001F9778 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -548,6 +551,8 @@
 				5793F9ED14C3E7CA00B87EC9 /* TagTableViewCell.m */,
 				5793FA3714C4090E00B87EC9 /* AuthorTableViewCell.h */,
 				5793FA3814C4090F00B87EC9 /* AuthorTableViewCell.m */,
+				5793FA4414C44BF400B87EC9 /* ResetNavigationController.h */,
+				5793FA4514C44BF500B87EC9 /* ResetNavigationController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -901,6 +906,7 @@
 				5793FA3014C3FE1D00B87EC9 /* UIImageView+WebCache.m in Sources */,
 				5793FA3614C408F700B87EC9 /* AuthorListController.m in Sources */,
 				5793FA3914C4090F00B87EC9 /* AuthorTableViewCell.m in Sources */,
+				5793FA4614C44BF600B87EC9 /* ResetNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

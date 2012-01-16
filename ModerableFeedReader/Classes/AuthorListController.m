@@ -11,6 +11,8 @@
 #import "AuthorTableViewCell.h"
 #import "FRCFetchedResultsTableViewDataSource.h"
 #import "SKAppDelegate.h"
+#import "PostsListController.h"
+
 @implementation AuthorListController{
     __strong FRCFetchedResultsTableViewDataSource *fetchedResultsDS;
 }
@@ -173,6 +175,14 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Assume self.view is the table view
+    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+    Author *author = [fetchedResultsDS objectAtIndexPath:path];
+    [segue.destinationViewController setRelatedTo:author];
 }
 
 @end

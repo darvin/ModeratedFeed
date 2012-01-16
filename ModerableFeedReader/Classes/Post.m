@@ -77,6 +77,10 @@
     }
     
     Author *author = [Author findFirstByAttribute:@"url" withValue:item.sourceLink];
+    if (!author) {
+        author = [Author createEntity];
+        author.url = item.sourceLink;
+    }
     [post setAuthor:author];
     
     
