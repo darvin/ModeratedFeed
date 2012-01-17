@@ -14,6 +14,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [InventoryKit registerWithPaymentQueue];
+
     [MagicalRecordHelpers setupCoreDataStackWithInMemoryStore];
     
 #ifdef LOCAL_SERVER_DEBUG

@@ -13,3 +13,9 @@
 [submodule "libs/SDWebImage"]
 	path = libs/SDWebImage
 	url = git://github.com/rs/SDWebImage.git
+[submodule "libs/inventory-kit"]
+	path = libs/inventory-kit
+	url = git://github.com/agoodman/inventory-kit.git
+[submodule "libs/asi-http-request"]
+	path = libs/asi-http-request
+	url = git://github.com/pokeb/asi-http-request.git
