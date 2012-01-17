@@ -112,6 +112,7 @@
 		57F087EC14C518C3005C1F0D /* AppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F087EB14C518C3005C1F0D /* AppIcon@2x.png */; };
 		57F087EE14C518C8005C1F0D /* AppIcon@iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F087ED14C518C8005C1F0D /* AppIcon@iPad.png */; };
 		57F087F014C518DD005C1F0D /* AppIconNewsstand.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F087EF14C518DD005C1F0D /* AppIconNewsstand.png */; };
+		57F087F714C526F7005C1F0D /* RoundedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F087F614C526F7005C1F0D /* RoundedImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -311,6 +312,8 @@
 		57F087EB14C518C3005C1F0D /* AppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@2x.png"; sourceTree = "<group>"; };
 		57F087ED14C518C8005C1F0D /* AppIcon@iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@iPad.png"; sourceTree = "<group>"; };
 		57F087EF14C518DD005C1F0D /* AppIconNewsstand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIconNewsstand.png; sourceTree = "<group>"; };
+		57F087F514C526F7005C1F0D /* RoundedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoundedImageView.h; path = Classes/RoundedImageView.h; sourceTree = "<group>"; };
+		57F087F614C526F7005C1F0D /* RoundedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundedImageView.m; path = Classes/RoundedImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -539,6 +542,8 @@
 				579A0B2214C30EDB001F9778 /* NSString+Strip.m */,
 				579A0B2314C30EDB001F9778 /* SKAppDelegate.h */,
 				579A0B2414C30EDB001F9778 /* SKAppDelegate.m */,
+				57F087F514C526F7005C1F0D /* RoundedImageView.h */,
+				57F087F614C526F7005C1F0D /* RoundedImageView.m */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -932,6 +937,7 @@
 				5793FA3614C408F700B87EC9 /* AuthorListController.m in Sources */,
 				5793FA3914C4090F00B87EC9 /* AuthorTableViewCell.m in Sources */,
 				5793FA4614C44BF600B87EC9 /* ResetNavigationController.m in Sources */,
+				57F087F714C526F7005C1F0D /* RoundedImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

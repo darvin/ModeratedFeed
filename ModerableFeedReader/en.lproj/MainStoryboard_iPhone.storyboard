@@ -21,7 +21,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="98"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="111-user.png" id="UE4-QH-vpJ">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="111-user.png" id="UE4-QH-vpJ" customClass="RoundedImageView">
                                             <rect key="frame" x="14" y="19" width="60" height="60"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -203,7 +203,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="GLC-oi-g3m">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="GLC-oi-g3m" customClass="RoundedImageView">
                                             <rect key="frame" x="11" y="12" width="60" height="60"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -272,6 +272,9 @@
         </class>
         <class className="ResetNavigationController" superclassName="UINavigationController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ResetNavigationController.h"/>
+        </class>
+        <class className="RoundedImageView" superclassName="UIImageView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RoundedImageView.h"/>
         </class>
         <class className="TagListController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TagListController.h"/>
