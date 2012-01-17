@@ -6,18 +6,18 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "ModerableFeedReaderTests.h"
+#import "ModeratedFeedTests.h"
 #import "Post.h"
 #import "Signature.h"
 #import "Tag.h"
 #import "Author.h"
 
-@interface ModerableFeedReaderTests () 
+@interface ModeratedFeedTests () 
 
 - (BOOL)waitForCompletion:(NSTimeInterval)timeoutSecs;
 @end
 
-@implementation ModerableFeedReaderTests
+@implementation ModeratedFeedTests
 - (BOOL)waitForCompletion:(NSTimeInterval)timeoutSecs
 {
 	NSDate	*timeoutDate = [NSDate dateWithTimeIntervalSinceNow:timeoutSecs];
@@ -60,7 +60,7 @@
 
 - (void)testTagFetching
 {
-    [Tag fetchFromUrl:apiURL];
+    [Tag fetchFromUrl: apiURL success:nil];
     [self waitForCompletion:3.0];
     NSAssert([[Tag findAll] count]>0, @"tags not fetched");
     
@@ -79,7 +79,7 @@
 
 - (void)testTaggedPostsFetching 
 {
-    [Tag fetchFromUrl:apiURL];
+    [Tag fetchFromUrl:apiURL success:nil];
     [self waitForCompletion:3.0];
     NSAssert([[Tag findAll] count]>0, @"tags not fetched");
     

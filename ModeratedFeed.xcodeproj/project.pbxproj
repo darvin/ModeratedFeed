@@ -57,7 +57,7 @@
 		579A0AEA14C30D3C001F9778 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579A0ABC14C30D3C001F9778 /* UIKit.framework */; };
 		579A0AEB14C30D3C001F9778 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579A0ABE14C30D3C001F9778 /* Foundation.framework */; };
 		579A0AF314C30D3C001F9778 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 579A0AF114C30D3C001F9778 /* InfoPlist.strings */; };
-		579A0AF614C30D3C001F9778 /* ModerableFeedReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0AF514C30D3C001F9778 /* ModerableFeedReaderTests.m */; };
+		579A0AF614C30D3C001F9778 /* ModeratedFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0AF514C30D3C001F9778 /* ModeratedFeedTests.m */; };
 		579A0B1614C30EC3001F9778 /* _Author.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B0514C30EC3001F9778 /* _Author.m */; };
 		579A0B1714C30EC3001F9778 /* _Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B0714C30EC3001F9778 /* _Post.m */; };
 		579A0B1814C30EC3001F9778 /* _Signature.m in Sources */ = {isa = PBXBuildFile; fileRef = 579A0B0914C30EC3001F9778 /* _Signature.m */; };
@@ -192,22 +192,22 @@
 		5793FA3814C4090F00B87EC9 /* AuthorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthorTableViewCell.m; path = Classes/AuthorTableViewCell.m; sourceTree = "<group>"; };
 		5793FA4414C44BF400B87EC9 /* ResetNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResetNavigationController.h; path = Classes/ResetNavigationController.h; sourceTree = "<group>"; };
 		5793FA4514C44BF500B87EC9 /* ResetNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResetNavigationController.m; path = Classes/ResetNavigationController.m; sourceTree = "<group>"; };
-		579A0AB814C30D3B001F9778 /* ModerableFeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModerableFeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		579A0AB814C30D3B001F9778 /* ModeratedFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModeratedFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		579A0ABC14C30D3C001F9778 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		579A0ABE14C30D3C001F9778 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		579A0AC014C30D3C001F9778 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		579A0AC414C30D3C001F9778 /* ModerableFeedReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModerableFeedReader-Info.plist"; sourceTree = "<group>"; };
+		579A0AC414C30D3C001F9778 /* ModeratedFeed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModeratedFeed-Info.plist"; sourceTree = "<group>"; };
 		579A0AC614C30D3C001F9778 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		579A0AC814C30D3C001F9778 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		579A0ACA14C30D3C001F9778 /* ModerableFeedReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModerableFeedReader-Prefix.pch"; sourceTree = "<group>"; };
+		579A0ACA14C30D3C001F9778 /* ModeratedFeed-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModeratedFeed-Prefix.pch"; sourceTree = "<group>"; };
 		579A0ACF14C30D3C001F9778 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		579A0AD214C30D3C001F9778 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		579A0AE714C30D3C001F9778 /* ModerableFeedReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModerableFeedReaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		579A0AE714C30D3C001F9778 /* ModeratedFeedTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModeratedFeedTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		579A0AE814C30D3C001F9778 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		579A0AF014C30D3C001F9778 /* ModerableFeedReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModerableFeedReaderTests-Info.plist"; sourceTree = "<group>"; };
+		579A0AF014C30D3C001F9778 /* ModeratedFeedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModeratedFeedTests-Info.plist"; sourceTree = "<group>"; };
 		579A0AF214C30D3C001F9778 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		579A0AF414C30D3C001F9778 /* ModerableFeedReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModerableFeedReaderTests.h; sourceTree = "<group>"; };
-		579A0AF514C30D3C001F9778 /* ModerableFeedReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModerableFeedReaderTests.m; sourceTree = "<group>"; };
+		579A0AF414C30D3C001F9778 /* ModeratedFeedTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModeratedFeedTests.h; sourceTree = "<group>"; };
+		579A0AF514C30D3C001F9778 /* ModeratedFeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModeratedFeedTests.m; sourceTree = "<group>"; };
 		579A0B0414C30EC3001F9778 /* _Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Author.h; path = Classes/_Author.h; sourceTree = "<group>"; };
 		579A0B0514C30EC3001F9778 /* _Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Author.m; path = Classes/_Author.m; sourceTree = "<group>"; };
 		579A0B0614C30EC3001F9778 /* _Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Post.h; path = Classes/_Post.h; sourceTree = "<group>"; };
@@ -427,8 +427,8 @@
 		579A0AAD14C30D3B001F9778 = {
 			isa = PBXGroup;
 			children = (
-				579A0AC214C30D3C001F9778 /* ModerableFeedReader */,
-				579A0AEE14C30D3C001F9778 /* ModerableFeedReaderTests */,
+				579A0AC214C30D3C001F9778 /* ModeratedFeed */,
+				579A0AEE14C30D3C001F9778 /* ModeratedFeedTests */,
 				579A0ABB14C30D3C001F9778 /* Frameworks */,
 				579A0AB914C30D3B001F9778 /* Products */,
 				579A0B3714C30FCB001F9778 /* libs */,
@@ -438,8 +438,8 @@
 		579A0AB914C30D3B001F9778 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				579A0AB814C30D3B001F9778 /* ModerableFeedReader.app */,
-				579A0AE714C30D3C001F9778 /* ModerableFeedReaderTests.octest */,
+				579A0AB814C30D3B001F9778 /* ModeratedFeed.app */,
+				579A0AE714C30D3C001F9778 /* ModeratedFeedTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -457,42 +457,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		579A0AC214C30D3C001F9778 /* ModerableFeedReader */ = {
+		579A0AC214C30D3C001F9778 /* ModeratedFeed */ = {
 			isa = PBXGroup;
 			children = (
 				579A0B0314C30D79001F9778 /* Resources */,
 				579A0AFF14C30D53001F9778 /* Classes */,
 				579A0AC314C30D3C001F9778 /* Supporting Files */,
 			);
-			path = ModerableFeedReader;
+			path = ModeratedFeed;
 			sourceTree = "<group>";
 		};
 		579A0AC314C30D3C001F9778 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				579A0B2E14C30F06001F9778 /* Model.xcdatamodeld */,
-				579A0AC414C30D3C001F9778 /* ModerableFeedReader-Info.plist */,
+				579A0AC414C30D3C001F9778 /* ModeratedFeed-Info.plist */,
 				579A0AC514C30D3C001F9778 /* InfoPlist.strings */,
 				579A0AC814C30D3C001F9778 /* main.m */,
-				579A0ACA14C30D3C001F9778 /* ModerableFeedReader-Prefix.pch */,
+				579A0ACA14C30D3C001F9778 /* ModeratedFeed-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		579A0AEE14C30D3C001F9778 /* ModerableFeedReaderTests */ = {
+		579A0AEE14C30D3C001F9778 /* ModeratedFeedTests */ = {
 			isa = PBXGroup;
 			children = (
-				579A0AF414C30D3C001F9778 /* ModerableFeedReaderTests.h */,
-				579A0AF514C30D3C001F9778 /* ModerableFeedReaderTests.m */,
+				579A0AF414C30D3C001F9778 /* ModeratedFeedTests.h */,
+				579A0AF514C30D3C001F9778 /* ModeratedFeedTests.m */,
 				579A0AEF14C30D3C001F9778 /* Supporting Files */,
 			);
-			path = ModerableFeedReaderTests;
+			path = ModeratedFeedTests;
 			sourceTree = "<group>";
 		};
 		579A0AEF14C30D3C001F9778 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				579A0AF014C30D3C001F9778 /* ModerableFeedReaderTests-Info.plist */,
+				579A0AF014C30D3C001F9778 /* ModeratedFeedTests-Info.plist */,
 				579A0AF114C30D3C001F9778 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -742,9 +742,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		579A0AB714C30D3B001F9778 /* ModerableFeedReader */ = {
+		579A0AB714C30D3B001F9778 /* ModeratedFeed */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 579A0AF914C30D3C001F9778 /* Build configuration list for PBXNativeTarget "ModerableFeedReader" */;
+			buildConfigurationList = 579A0AF914C30D3C001F9778 /* Build configuration list for PBXNativeTarget "ModeratedFeed" */;
 			buildPhases = (
 				579A0AB414C30D3B001F9778 /* Sources */,
 				579A0AB514C30D3B001F9778 /* Frameworks */,
@@ -754,14 +754,14 @@
 			);
 			dependencies = (
 			);
-			name = ModerableFeedReader;
+			name = ModeratedFeed;
 			productName = RssModerableFeedReader;
-			productReference = 579A0AB814C30D3B001F9778 /* ModerableFeedReader.app */;
+			productReference = 579A0AB814C30D3B001F9778 /* ModeratedFeed.app */;
 			productType = "com.apple.product-type.application";
 		};
-		579A0AE614C30D3C001F9778 /* ModerableFeedReaderTests */ = {
+		579A0AE614C30D3C001F9778 /* ModeratedFeedTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 579A0AFC14C30D3C001F9778 /* Build configuration list for PBXNativeTarget "ModerableFeedReaderTests" */;
+			buildConfigurationList = 579A0AFC14C30D3C001F9778 /* Build configuration list for PBXNativeTarget "ModeratedFeedTests" */;
 			buildPhases = (
 				579A0AE214C30D3C001F9778 /* Sources */,
 				579A0AE314C30D3C001F9778 /* Frameworks */,
@@ -773,9 +773,9 @@
 			dependencies = (
 				579A0AED14C30D3C001F9778 /* PBXTargetDependency */,
 			);
-			name = ModerableFeedReaderTests;
+			name = ModeratedFeedTests;
 			productName = RssModerableFeedReaderTests;
-			productReference = 579A0AE714C30D3C001F9778 /* ModerableFeedReaderTests.octest */;
+			productReference = 579A0AE714C30D3C001F9778 /* ModeratedFeedTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -786,7 +786,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 579A0AB214C30D3B001F9778 /* Build configuration list for PBXProject "ModerableFeedReader" */;
+			buildConfigurationList = 579A0AB214C30D3B001F9778 /* Build configuration list for PBXProject "ModeratedFeed" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -798,8 +798,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				579A0AB714C30D3B001F9778 /* ModerableFeedReader */,
-				579A0AE614C30D3C001F9778 /* ModerableFeedReaderTests */,
+				579A0AB714C30D3B001F9778 /* ModeratedFeed */,
+				579A0AE614C30D3C001F9778 /* ModeratedFeedTests */,
 			);
 		};
 /* End PBXProject section */
@@ -945,7 +945,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				579A0AF614C30D3C001F9778 /* ModerableFeedReaderTests.m in Sources */,
+				579A0AF614C30D3C001F9778 /* ModeratedFeedTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -954,7 +954,7 @@
 /* Begin PBXTargetDependency section */
 		579A0AED14C30D3C001F9778 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 579A0AB714C30D3B001F9778 /* ModerableFeedReader */;
+			target = 579A0AB714C30D3B001F9778 /* ModeratedFeed */;
 			targetProxy = 579A0AEC14C30D3C001F9778 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1051,14 +1051,15 @@
 					"\"$(SRCROOT)/libs/MagicalRecord/Mac App Unit Tests/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ModerableFeedReader/ModerableFeedReader-Prefix.pch";
-				INFOPLIST_FILE = "ModerableFeedReader/ModerableFeedReader-Info.plist";
+				GCC_PREFIX_HEADER = "ModeratedFeed/ModeratedFeed-Prefix.pch";
+				INFOPLIST_FILE = "ModeratedFeed/ModeratedFeed-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/libs/MagicalRecord/iOS App Unit Tests/Frameworks/OCMockLibrary\"",
 					"\"$(SRCROOT)/libs/MagicalRecord/Mac App Unit Tests/Frameworks/OCMockLibrary\"",
 				);
-				PRODUCT_NAME = ModerableFeedReader;
+				PRODUCT_NAME = ModeratedFeed;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1072,14 +1073,15 @@
 					"\"$(SRCROOT)/libs/MagicalRecord/Mac App Unit Tests/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ModerableFeedReader/ModerableFeedReader-Prefix.pch";
-				INFOPLIST_FILE = "ModerableFeedReader/ModerableFeedReader-Info.plist";
+				GCC_PREFIX_HEADER = "ModeratedFeed/ModeratedFeed-Prefix.pch";
+				INFOPLIST_FILE = "ModeratedFeed/ModeratedFeed-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/libs/MagicalRecord/iOS App Unit Tests/Frameworks/OCMockLibrary\"",
 					"\"$(SRCROOT)/libs/MagicalRecord/Mac App Unit Tests/Frameworks/OCMockLibrary\"",
 				);
-				PRODUCT_NAME = ModerableFeedReader;
+				PRODUCT_NAME = ModeratedFeed;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1093,9 +1095,9 @@
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ModerableFeedReader/ModerableFeedReader-Prefix.pch";
-				INFOPLIST_FILE = "ModerableFeedReaderTests/ModerableFeedReaderTests-Info.plist";
-				PRODUCT_NAME = ModerableFeedReaderTests;
+				GCC_PREFIX_HEADER = "ModeratedFeed/ModeratedFeed-Prefix.pch";
+				INFOPLIST_FILE = "ModeratedFeedTests/ModeratedFeedTests-Info.plist";
+				PRODUCT_NAME = ModeratedFeedTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -1110,9 +1112,9 @@
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ModerableFeedReader/ModerableFeedReader-Prefix.pch";
-				INFOPLIST_FILE = "ModerableFeedReaderTests/ModerableFeedReaderTests-Info.plist";
-				PRODUCT_NAME = ModerableFeedReaderTests;
+				GCC_PREFIX_HEADER = "ModeratedFeed/ModeratedFeed-Prefix.pch";
+				INFOPLIST_FILE = "ModeratedFeedTests/ModeratedFeedTests-Info.plist";
+				PRODUCT_NAME = ModeratedFeedTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -1121,7 +1123,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		579A0AB214C30D3B001F9778 /* Build configuration list for PBXProject "ModerableFeedReader" */ = {
+		579A0AB214C30D3B001F9778 /* Build configuration list for PBXProject "ModeratedFeed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				579A0AF714C30D3C001F9778 /* Debug */,
@@ -1130,7 +1132,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		579A0AF914C30D3C001F9778 /* Build configuration list for PBXNativeTarget "ModerableFeedReader" */ = {
+		579A0AF914C30D3C001F9778 /* Build configuration list for PBXNativeTarget "ModeratedFeed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				579A0AFA14C30D3C001F9778 /* Debug */,
@@ -1139,7 +1141,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		579A0AFC14C30D3C001F9778 /* Build configuration list for PBXNativeTarget "ModerableFeedReaderTests" */ = {
+		579A0AFC14C30D3C001F9778 /* Build configuration list for PBXNativeTarget "ModeratedFeedTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				579A0AFD14C30D3C001F9778 /* Debug */,
