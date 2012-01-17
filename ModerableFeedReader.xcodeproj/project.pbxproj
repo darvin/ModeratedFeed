@@ -378,6 +378,7 @@
 		5793F9F214C3EE2A00B87EC9 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				57F087F114C51ABA005C1F0D /* AppIcon */,
 				5793F9F314C3EE2A00B87EC9 /* 111-user.png */,
 				5793F9F414C3EE2A00B87EC9 /* 111-user@2x.png */,
 				5793F9F514C3EE2A00B87EC9 /* 15-tags.png */,
@@ -423,10 +424,6 @@
 		579A0AAD14C30D3B001F9778 = {
 			isa = PBXGroup;
 			children = (
-				57F087EF14C518DD005C1F0D /* AppIconNewsstand.png */,
-				57F087ED14C518C8005C1F0D /* AppIcon@iPad.png */,
-				57F087EB14C518C3005C1F0D /* AppIcon@2x.png */,
-				57F087E914C518C0005C1F0D /* AppIcon.png */,
 				579A0AC214C30D3C001F9778 /* ModerableFeedReader */,
 				579A0AEE14C30D3C001F9778 /* ModerableFeedReaderTests */,
 				579A0ABB14C30D3C001F9778 /* Frameworks */,
@@ -723,6 +720,18 @@
 				579A0C7014C30FCC001F9778 /* RootViewController.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		57F087F114C51ABA005C1F0D /* AppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				57F087EF14C518DD005C1F0D /* AppIconNewsstand.png */,
+				57F087ED14C518C8005C1F0D /* AppIcon@iPad.png */,
+				57F087EB14C518C3005C1F0D /* AppIcon@2x.png */,
+				57F087E914C518C0005C1F0D /* AppIcon.png */,
+			);
+			name = AppIcon;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

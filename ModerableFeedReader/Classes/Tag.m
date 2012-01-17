@@ -38,5 +38,7 @@
     
     [[self queue] addOperation:operation];
 }
-
+- (NSString *) nameLowerCase {
+    return [self.name lowercaseString];
+}
 @end

@@ -89,6 +89,15 @@ const struct AuthorFetchedProperties AuthorFetchedProperties = {
 @dynamic posts;
 
 	
+- (NSMutableSet*)postsSet {
+	[self willAccessValueForKey:@"posts"];
+  
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"posts"];
+  
+	[self didAccessValueForKey:@"posts"];
+	return result;
+}
+	
 
 
 

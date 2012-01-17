@@ -6,6 +6,7 @@
 
 extern const struct TagAttributes {
 	__unsafe_unretained NSString *name;
+	__unsafe_unretained NSString *nameLowerCase;
 } TagAttributes;
 
 extern const struct TagRelationships {
@@ -16,6 +17,7 @@ extern const struct TagFetchedProperties {
 } TagFetchedProperties;
 
 @class Post;
+
 
 
 
@@ -35,6 +37,14 @@ extern const struct TagFetchedProperties {
 
 
 //- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
+
+
+
+
+@property (nonatomic, strong) NSString *nameLowerCase;
+
+
+//- (BOOL)validateNameLowerCase:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -63,6 +73,12 @@ extern const struct TagFetchedProperties {
 
 - (NSString*)primitiveName;
 - (void)setPrimitiveName:(NSString*)value;
+
+
+
+
+- (NSString*)primitiveNameLowerCase;
+- (void)setPrimitiveNameLowerCase:(NSString*)value;
 
 
 

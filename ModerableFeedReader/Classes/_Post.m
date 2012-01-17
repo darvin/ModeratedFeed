@@ -114,9 +114,9 @@ const struct PostFetchedProperties PostFetchedProperties = {
 
 
 
-+ (NSArray*)fetchPostByAuthor:(NSManagedObjectContext*)moc_ {
++ (NSArray*)fetchTest:(NSManagedObjectContext*)moc_ {
 	NSError *error = nil;
-	NSArray *result = [self fetchPostByAuthor:moc_ error:&error];
+	NSArray *result = [self fetchTest:moc_ error:&error];
 	if (error) {
 #if TARGET_OS_IPHONE
 		NSLog(@"error: %@", error);
@@ -126,7 +126,7 @@ const struct PostFetchedProperties PostFetchedProperties = {
 	}
 	return result;
 }
-+ (NSArray*)fetchPostByAuthor:(NSManagedObjectContext*)moc_ error:(NSError**)error_ {
++ (NSArray*)fetchTest:(NSManagedObjectContext*)moc_ error:(NSError**)error_ {
 	NSParameterAssert(moc_);
 	NSError *error = nil;
 	
@@ -134,9 +134,9 @@ const struct PostFetchedProperties PostFetchedProperties = {
 	
 	NSDictionary *substitutionVariables = [NSDictionary dictionary];
 										
-	NSFetchRequest *fetchRequest = [model fetchRequestFromTemplateWithName:@"PostByAuthor"
+	NSFetchRequest *fetchRequest = [model fetchRequestFromTemplateWithName:@"test"
 													 substitutionVariables:substitutionVariables];
-	NSAssert(fetchRequest, @"Can't find fetch request named \"PostByAuthor\".");
+	NSAssert(fetchRequest, @"Can't find fetch request named \"test\".");
 	
 	NSArray *result = [moc_ executeFetchRequest:fetchRequest error:&error];
 	if (error_) *error_ = error;
@@ -168,6 +168,37 @@ const struct PostFetchedProperties PostFetchedProperties = {
 	NSFetchRequest *fetchRequest = [model fetchRequestFromTemplateWithName:@"PublishedPosts"
 													 substitutionVariables:substitutionVariables];
 	NSAssert(fetchRequest, @"Can't find fetch request named \"PublishedPosts\".");
+	
+	NSArray *result = [moc_ executeFetchRequest:fetchRequest error:&error];
+	if (error_) *error_ = error;
+	return result;
+}
+
+
+
++ (NSArray*)fetchPostByAuthor:(NSManagedObjectContext*)moc_ {
+	NSError *error = nil;
+	NSArray *result = [self fetchPostByAuthor:moc_ error:&error];
+	if (error) {
+#if TARGET_OS_IPHONE
+		NSLog(@"error: %@", error);
+#else
+		[NSApp presentError:error];
+#endif
+	}
+	return result;
+}
++ (NSArray*)fetchPostByAuthor:(NSManagedObjectContext*)moc_ error:(NSError**)error_ {
+	NSParameterAssert(moc_);
+	NSError *error = nil;
+	
+	NSManagedObjectModel *model = [[moc_ persistentStoreCoordinator] managedObjectModel];
+	
+	NSDictionary *substitutionVariables = [NSDictionary dictionary];
+										
+	NSFetchRequest *fetchRequest = [model fetchRequestFromTemplateWithName:@"PostByAuthor"
+													 substitutionVariables:substitutionVariables];
+	NSAssert(fetchRequest, @"Can't find fetch request named \"PostByAuthor\".");
 	
 	NSArray *result = [moc_ executeFetchRequest:fetchRequest error:&error];
 	if (error_) *error_ = error;

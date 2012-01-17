@@ -105,13 +105,18 @@ extern const struct PostFetchedProperties {
 
 
 
-+ (NSArray*)fetchPostByAuthor:(NSManagedObjectContext*)moc_ ;
-+ (NSArray*)fetchPostByAuthor:(NSManagedObjectContext*)moc_ error:(NSError**)error_;
++ (NSArray*)fetchTest:(NSManagedObjectContext*)moc_ ;
++ (NSArray*)fetchTest:(NSManagedObjectContext*)moc_ error:(NSError**)error_;
 
 
 
 + (NSArray*)fetchPublishedPosts:(NSManagedObjectContext*)moc_ ;
 + (NSArray*)fetchPublishedPosts:(NSManagedObjectContext*)moc_ error:(NSError**)error_;
+
+
+
++ (NSArray*)fetchPostByAuthor:(NSManagedObjectContext*)moc_ ;
++ (NSArray*)fetchPostByAuthor:(NSManagedObjectContext*)moc_ error:(NSError**)error_;
 
 
 

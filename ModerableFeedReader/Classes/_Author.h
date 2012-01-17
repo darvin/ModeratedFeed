@@ -80,9 +80,9 @@ extern const struct AuthorFetchedProperties {
 
 
 
-@property (nonatomic, strong) Post* posts;
+@property (nonatomic, strong) NSSet* posts;
 
-//- (BOOL)validatePosts:(id*)value_ error:(NSError**)error_;
+- (NSMutableSet*)postsSet;
 
 
 
@@ -90,6 +90,11 @@ extern const struct AuthorFetchedProperties {
 @end
 
 @interface _Author (CoreDataGeneratedAccessors)
+
+- (void)addPosts:(NSSet*)value_;
+- (void)removePosts:(NSSet*)value_;
+- (void)addPostsObject:(Post*)value_;
+- (void)removePostsObject:(Post*)value_;
 
 @end
 
@@ -127,8 +132,8 @@ extern const struct AuthorFetchedProperties {
 
 
 
-- (Post*)primitivePosts;
-- (void)setPrimitivePosts:(Post*)value;
+- (NSMutableSet*)primitivePosts;
+- (void)setPrimitivePosts:(NSMutableSet*)value;
 
 
 @end

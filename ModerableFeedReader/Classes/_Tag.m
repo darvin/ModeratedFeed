@@ -5,6 +5,7 @@
 
 const struct TagAttributes TagAttributes = {
 	.name = @"name",
+	.nameLowerCase = @"nameLowerCase",
 };
 
 const struct TagRelationships TagRelationships = {
@@ -48,6 +49,13 @@ const struct TagFetchedProperties TagFetchedProperties = {
 
 
 @dynamic name;
+
+
+
+
+
+
+@dynamic nameLowerCase;
 
 
 
