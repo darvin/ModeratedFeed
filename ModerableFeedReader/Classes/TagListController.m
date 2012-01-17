@@ -8,6 +8,7 @@
 
 #import "TagListController.h"
 #import "Tag.h"
+#import "Post.h"
 #import "FRCFetchedResultsTableViewDataSource.h"
 #import "TagTableViewCell.h"
 #import "SKAppDelegate.h"
@@ -55,10 +56,9 @@
     fetchedResultsDS.tableView = self.tableView;
     fetchedResultsDS.cellClass = [TagTableViewCell class];
     fetchedResultsDS.managedObjectContext = [NSManagedObjectContext defaultContext];
-    NSFetchRequest  *request = [Tag requestAllSortedBy:@"name" ascending:NO];
-    
-//    [request setFetchBatchSize:20];
-    
+    NSFetchRequest  *request = [Tag requestAllSortedBy:@"posts.@count" ascending:NO withPredicate:[NSPredicate predicateWithFormat:
+            @"(posts.@count > 0) AND (ANY posts.signature!=nil)"]];
+        
     fetchedResultsDS.fetchRequest = request;
     
     self.tableView.dataSource = fetchedResultsDS;
@@ -159,6 +159,7 @@
     // Assume self.view is the table view
     NSIndexPath *path = [self.tableView indexPathForSelectedRow];
     Tag *tag = [fetchedResultsDS objectAtIndexPath:path];
+    NSLog(@"%@",((Post*)[tag.posts anyObject]).signature);
     [segue.destinationViewController setRelatedTo:tag];
 }
 

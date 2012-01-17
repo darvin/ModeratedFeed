@@ -53,9 +53,8 @@
     fetchedResultsDS.tableView = self.tableView;
     fetchedResultsDS.cellClass = [AuthorTableViewCell class];
     fetchedResultsDS.managedObjectContext = [NSManagedObjectContext defaultContext];
-    NSFetchRequest  *request = [Author requestAllSortedBy:@"name" ascending:NO];
-    
-    [request setFetchBatchSize:20];
+    NSFetchRequest  *request = [Author requestAllSortedBy:@"posts.@count" ascending:NO withPredicate:[NSPredicate predicateWithFormat:
+            @"(posts.@count > 0) AND (ANY posts.signature!=nil)"]];    
     
     fetchedResultsDS.fetchRequest = request;
     
