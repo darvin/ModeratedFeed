@@ -54,9 +54,6 @@
 
 - (void) setupDataSource {
     SKAppDelegate* app = (SKAppDelegate*)[UIApplication sharedApplication].delegate;
-    NSURL* apiURL = app.apiURL;
-
-    
     
     fetchedResultsDS = [[FRCFetchedResultsTableViewDataSource alloc] init];
     fetchedResultsDS.tableView = self.tableView;
@@ -82,7 +79,6 @@
         NSFetchRequest  *request = [Post requestAllSortedBy:@"date" ascending:YES withPredicate:predicate];
         
         [request setFetchBatchSize:20];
-        NSArray* res = [Post executeFetchRequest:request];
         return request;
     });
     
@@ -171,8 +167,8 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-    Post *post = [fetchedResultsDS objectAtIndexPath:path];
+//    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+//    Post *post = [fetchedResultsDS objectAtIndexPath:path];
 
 }
 

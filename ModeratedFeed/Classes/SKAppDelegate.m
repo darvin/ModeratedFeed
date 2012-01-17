@@ -7,14 +7,12 @@
 //
 
 #import "SKAppDelegate.h"
-#import "MKStoreManager.h"
 @implementation SKAppDelegate
 
 @synthesize window = _window, apiURL;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [MKStoreManager sharedManager];
     
     [MagicalRecordHelpers setupCoreDataStackWithInMemoryStore];
     
