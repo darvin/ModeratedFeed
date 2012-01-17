@@ -11,6 +11,7 @@
 #import "Signature.h"
 #import "Tag.h"
 #import "Author.h"
+#import "IADisquser.h"
 
 @interface ModeratedFeedTests () 
 

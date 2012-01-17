@@ -27,8 +27,13 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+- (void) awakeFromNib {
+    UIBarButtonItem *shareButton =[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(share)];
+    UIBarButtonItem *commentsButton = self.navigationItem.rightBarButtonItem;
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:shareButton, commentsButton, nil];
+}
 
-- (IBAction)share:(id)sender
+- (void)share
 {
     [SHK setRootViewController:self.tabBarController];
 
