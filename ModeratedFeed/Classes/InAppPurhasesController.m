@@ -5,10 +5,9 @@
 //  Created by Sergey Klimov on 1/16/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
-#import "InventoryKit.h"
 
 #import "InAppPurhasesController.h"
-
+#import "MKStoreManager.h"
 
 @implementation InAppPurhasesController
 @synthesize inAppPurhases = _inAppPurhases;
@@ -97,16 +96,43 @@
     return [self.inAppPurhases count];
 }
 
+
+-(NSString*) formatCurrencyValue:(double)value
+{
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    [numberFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
+    [numberFormatter setCurrencySymbol:@"$"];
+    [numberFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+    NSNumber *c = [NSNumber numberWithFloat:value];
+    return [numberFormatter stringFromNumber:c];
+}
+
+- (NSString*) purhaseIdForIndexPath:(NSIndexPath *)indexPath
+{
+    return  [[self.inAppPurhases keysSortedByValueUsingComparator:^(id obj1, id obj2){
+        return [[obj1 objectForKey:@"name"] compare:[obj2 objectForKey:@"name"]];
+    }] objectAtIndex:indexPath.row];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     
-    // Configure the cell...
+    NSString *purhaseId = [self purhaseIdForIndexPath:indexPath];
+    
+    NSDictionary *inAppPurhase = [self.inAppPurhases objectForKey: purhaseId];
+    cell.textLabel.text = [inAppPurhase objectForKey:@"name"];
+    
+    if([MKStoreManager isFeaturePurchased:purhaseId]){
+        cell.detailTextLabel.text = @"purhased";
+    } else {
+        cell.detailTextLabel.text =  [self formatCurrencyValue: [((NSNumber*)[inAppPurhase objectForKey:@"cost"]) doubleValue]];
+    }
     
     return cell;
 }
@@ -161,6 +187,12 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    NSString *purhaseId = [self purhaseIdForIndexPath:indexPath];
+    
+//    NSDictionary *inAppPurhase = [self.inAppPurhases objectForKey: purhaseId];
+    [[MKStoreManager sharedManager] buyFeature:purhaseId onComplete:^(NSString* purchasedFeature) { NSLog(@"Purchased: %@", purchasedFeature); } onCancelled:^ { NSLog(@"User Cancelled Transaction"); }];
+    
+
 }
 
 @end

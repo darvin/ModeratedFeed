@@ -7,15 +7,15 @@
 //
 
 #import "SKAppDelegate.h"
-
+#import "MKStoreManager.h"
 @implementation SKAppDelegate
 
 @synthesize window = _window, apiURL;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [InventoryKit registerWithPaymentQueue];
-
+    [MKStoreManager sharedManager];
+    
     [MagicalRecordHelpers setupCoreDataStackWithInMemoryStore];
     
 #ifdef LOCAL_SERVER_DEBUG

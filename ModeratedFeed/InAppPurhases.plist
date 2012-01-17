@@ -2,19 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>com.github.darvin.ModeratedFeed.freeSubscription</key>
-	<dict>
-		<key>cost</key>
-		<integer>0</integer>
-		<key>name</key>
-		<string>Free Subscription</string>
-	</dict>
 	<key>com.github.darvin.ModeratedFeed.premiumSubscription</key>
 	<dict>
-		<key>name</key>
-		<string>Premium Subscription</string>
 		<key>cost</key>
-		<integer>1</integer>
+		<real>4.99</real>
+		<key>name</key>
+		<string>Premium subscription</string>
+	</dict>
+	<key>com.github.darvin.ModeratedFeed.freeSubscription</key>
+	<dict>
+		<key>name</key>
+		<string>Free subscription</string>
+		<key>cost</key>
+		<integer>0</integer>
 	</dict>
 </dict>
 </plist>

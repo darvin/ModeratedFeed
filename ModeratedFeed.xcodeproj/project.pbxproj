@@ -114,8 +114,17 @@
 		57F087F014C518DD005C1F0D /* AppIconNewsstand.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F087EF14C518DD005C1F0D /* AppIconNewsstand.png */; };
 		57F087F714C526F7005C1F0D /* RoundedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F087F614C526F7005C1F0D /* RoundedImageView.m */; };
 		57F0884E14C53FA6005C1F0D /* InAppPurhasesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F0884D14C53FA6005C1F0D /* InAppPurhasesController.m */; };
-		57F0885014C540B8005C1F0D /* IKSubscriptionProducts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57F0884F14C540B8005C1F0D /* IKSubscriptionProducts.plist */; };
-		57F0885214C5424C005C1F0D /* InAppPurhases.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57F0885114C5424C005C1F0D /* InAppPurhases.plist */; };
+		57F0897514C5485E005C1F0D /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F0895E14C5485E005C1F0D /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		57F0897614C5485E005C1F0D /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F0896014C5485E005C1F0D /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		57F0897714C5485E005C1F0D /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F0896214C5485E005C1F0D /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		57F0897814C5485E005C1F0D /* MKSKProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F0896414C5485E005C1F0D /* MKSKProduct.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		57F0897914C5485E005C1F0D /* MKSKSubscriptionProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F0896614C5485E005C1F0D /* MKSKSubscriptionProduct.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		57F0897B14C5485E005C1F0D /* MKStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F0896A14C5485E005C1F0D /* MKStoreManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		57F0897C14C5485E005C1F0D /* MKStoreObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F0896C14C5485E005C1F0D /* MKStoreObserver.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		57F0898514C548E3005C1F0D /* MKStoreKitConfigs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57F0898414C548E2005C1F0D /* MKStoreKitConfigs.plist */; };
+		57F0898714C54C0F005C1F0D /* InAppPurhases.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57F0898614C54C0F005C1F0D /* InAppPurhases.plist */; };
+		57F0898B14C54D26005C1F0D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F0898A14C54D26005C1F0D /* Security.framework */; };
+		57F0898D14C54D5C005C1F0D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F0898C14C54D5C005C1F0D /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -319,8 +328,26 @@
 		57F087F614C526F7005C1F0D /* RoundedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundedImageView.m; path = Classes/RoundedImageView.m; sourceTree = "<group>"; };
 		57F0884C14C53FA6005C1F0D /* InAppPurhasesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InAppPurhasesController.h; path = Classes/InAppPurhasesController.h; sourceTree = "<group>"; };
 		57F0884D14C53FA6005C1F0D /* InAppPurhasesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InAppPurhasesController.m; path = Classes/InAppPurhasesController.m; sourceTree = "<group>"; };
-		57F0884F14C540B8005C1F0D /* IKSubscriptionProducts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = IKSubscriptionProducts.plist; path = Resources/InAppPurhases/IKSubscriptionProducts.plist; sourceTree = "<group>"; };
-		57F0885114C5424C005C1F0D /* InAppPurhases.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = InAppPurhases.plist; path = Resources/InAppPurhases/InAppPurhases.plist; sourceTree = "<group>"; };
+		57F0895D14C5485E005C1F0D /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		57F0895E14C5485E005C1F0D /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		57F0895F14C5485E005C1F0D /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		57F0896014C5485E005C1F0D /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		57F0896114C5485E005C1F0D /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		57F0896214C5485E005C1F0D /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		57F0896314C5485E005C1F0D /* MKSKProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSKProduct.h; sourceTree = "<group>"; };
+		57F0896414C5485E005C1F0D /* MKSKProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSKProduct.m; sourceTree = "<group>"; };
+		57F0896514C5485E005C1F0D /* MKSKSubscriptionProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSKSubscriptionProduct.h; sourceTree = "<group>"; };
+		57F0896614C5485E005C1F0D /* MKSKSubscriptionProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSKSubscriptionProduct.m; sourceTree = "<group>"; };
+		57F0896914C5485E005C1F0D /* MKStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKStoreManager.h; sourceTree = "<group>"; };
+		57F0896A14C5485E005C1F0D /* MKStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKStoreManager.m; sourceTree = "<group>"; };
+		57F0896B14C5485E005C1F0D /* MKStoreObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKStoreObserver.h; sourceTree = "<group>"; };
+		57F0896C14C5485E005C1F0D /* MKStoreObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKStoreObserver.m; sourceTree = "<group>"; };
+		57F0898314C548E2005C1F0D /* MKStoreKitConfigs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKStoreKitConfigs.h; sourceTree = "<group>"; };
+		57F0898414C548E2005C1F0D /* MKStoreKitConfigs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MKStoreKitConfigs.plist; sourceTree = "<group>"; };
+		57F0898614C54C0F005C1F0D /* InAppPurhases.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InAppPurhases.plist; sourceTree = "<group>"; };
+		57F0898814C54CD4005C1F0D /* libkeymgr.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libkeymgr.dylib; path = usr/lib/system/libkeymgr.dylib; sourceTree = SDKROOT; };
+		57F0898A14C54D26005C1F0D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		57F0898C14C54D5C005C1F0D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +355,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57F0898D14C54D5C005C1F0D /* StoreKit.framework in Frameworks */,
+				57F0898B14C54D26005C1F0D /* Security.framework in Frameworks */,
 				579A0ABD14C30D3C001F9778 /* UIKit.framework in Frameworks */,
 				579A0B3514C30F35001F9778 /* QuartzCore.framework in Frameworks */,
 				579A0B3614C30F35001F9778 /* CoreData.framework in Frameworks */,
@@ -434,6 +463,9 @@
 		579A0AAD14C30D3B001F9778 = {
 			isa = PBXGroup;
 			children = (
+				57F0898C14C54D5C005C1F0D /* StoreKit.framework */,
+				57F0898A14C54D26005C1F0D /* Security.framework */,
+				57F0898814C54CD4005C1F0D /* libkeymgr.dylib */,
 				579A0AC214C30D3C001F9778 /* ModeratedFeed */,
 				579A0AEE14C30D3C001F9778 /* ModeratedFeedTests */,
 				579A0ABB14C30D3C001F9778 /* Frameworks */,
@@ -482,8 +514,9 @@
 				579A0AC514C30D3C001F9778 /* InfoPlist.strings */,
 				579A0AC814C30D3C001F9778 /* main.m */,
 				579A0ACA14C30D3C001F9778 /* ModeratedFeed-Prefix.pch */,
-				57F0884F14C540B8005C1F0D /* IKSubscriptionProducts.plist */,
-				57F0885114C5424C005C1F0D /* InAppPurhases.plist */,
+				57F0898314C548E2005C1F0D /* MKStoreKitConfigs.h */,
+				57F0898414C548E2005C1F0D /* MKStoreKitConfigs.plist */,
+				57F0898614C54C0F005C1F0D /* InAppPurhases.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -595,6 +628,7 @@
 		579A0B3714C30FCB001F9778 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				57F0895A14C5485E005C1F0D /* MKStoreKit */,
 				5793FA0B14C3FE1D00B87EC9 /* SDWebImage */,
 				5793F9AB14C3759800B87EC9 /* FRCTableViewDataSources */,
 				579A0B3814C30FCB001F9778 /* AFNetworking */,
@@ -750,6 +784,35 @@
 			path = ../../..;
 			sourceTree = "<group>";
 		};
+		57F0895A14C5485E005C1F0D /* MKStoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				57F0895C14C5485E005C1F0D /* Externals */,
+				57F0896314C5485E005C1F0D /* MKSKProduct.h */,
+				57F0896414C5485E005C1F0D /* MKSKProduct.m */,
+				57F0896514C5485E005C1F0D /* MKSKSubscriptionProduct.h */,
+				57F0896614C5485E005C1F0D /* MKSKSubscriptionProduct.m */,
+				57F0896914C5485E005C1F0D /* MKStoreManager.h */,
+				57F0896A14C5485E005C1F0D /* MKStoreManager.m */,
+				57F0896B14C5485E005C1F0D /* MKStoreObserver.h */,
+				57F0896C14C5485E005C1F0D /* MKStoreObserver.m */,
+			);
+			path = MKStoreKit;
+			sourceTree = "<group>";
+		};
+		57F0895C14C5485E005C1F0D /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				57F0895D14C5485E005C1F0D /* JSONKit.h */,
+				57F0895E14C5485E005C1F0D /* JSONKit.m */,
+				57F0895F14C5485E005C1F0D /* NSData+Base64.h */,
+				57F0896014C5485E005C1F0D /* NSData+Base64.m */,
+				57F0896114C5485E005C1F0D /* SFHFKeychainUtils.h */,
+				57F0896214C5485E005C1F0D /* SFHFKeychainUtils.m */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -844,8 +907,8 @@
 				57F087EC14C518C3005C1F0D /* AppIcon@2x.png in Resources */,
 				57F087EE14C518C8005C1F0D /* AppIcon@iPad.png in Resources */,
 				57F087F014C518DD005C1F0D /* AppIconNewsstand.png in Resources */,
-				57F0885014C540B8005C1F0D /* IKSubscriptionProducts.plist in Resources */,
-				57F0885214C5424C005C1F0D /* InAppPurhases.plist in Resources */,
+				57F0898514C548E3005C1F0D /* MKStoreKitConfigs.plist in Resources */,
+				57F0898714C54C0F005C1F0D /* InAppPurhases.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -953,6 +1016,13 @@
 				5793FA4614C44BF600B87EC9 /* ResetNavigationController.m in Sources */,
 				57F087F714C526F7005C1F0D /* RoundedImageView.m in Sources */,
 				57F0884E14C53FA6005C1F0D /* InAppPurhasesController.m in Sources */,
+				57F0897514C5485E005C1F0D /* JSONKit.m in Sources */,
+				57F0897614C5485E005C1F0D /* NSData+Base64.m in Sources */,
+				57F0897714C5485E005C1F0D /* SFHFKeychainUtils.m in Sources */,
+				57F0897814C5485E005C1F0D /* MKSKProduct.m in Sources */,
+				57F0897914C5485E005C1F0D /* MKSKSubscriptionProduct.m in Sources */,
+				57F0897B14C5485E005C1F0D /* MKStoreManager.m in Sources */,
+				57F0897C14C5485E005C1F0D /* MKStoreObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1072,6 +1142,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/libs/MagicalRecord/iOS App Unit Tests/Frameworks/OCMockLibrary\"",
 					"\"$(SRCROOT)/libs/MagicalRecord/Mac App Unit Tests/Frameworks/OCMockLibrary\"",
+					"\"$(SDKROOT)/usr/lib/system\"",
 				);
 				PRODUCT_NAME = ModeratedFeed;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1094,6 +1165,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/libs/MagicalRecord/iOS App Unit Tests/Frameworks/OCMockLibrary\"",
 					"\"$(SRCROOT)/libs/MagicalRecord/Mac App Unit Tests/Frameworks/OCMockLibrary\"",
+					"\"$(SDKROOT)/usr/lib/system\"",
 				);
 				PRODUCT_NAME = ModeratedFeed;
 				TARGETED_DEVICE_FAMILY = 1;

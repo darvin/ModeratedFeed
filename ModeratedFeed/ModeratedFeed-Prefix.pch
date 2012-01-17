@@ -17,7 +17,4 @@
     #define MR_SHORTHAND
     #import "CoreData+MagicalRecord.h"
 
-    #define LOG_LEVEL_WARN 1
-    #import "InventoryKit.h"
-
 #endif
