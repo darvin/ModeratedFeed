@@ -22,6 +22,17 @@
 @synthesize relatedTo = _relatedTo;
 
 
++ (int) dataLoaded {
+    static int dataLoaded=-1;
+    
+    @synchronized(self)
+    {
+        dataLoaded++;
+        
+        return dataLoaded;
+    }
+}
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -93,20 +104,25 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    SKAppDelegate* app = (SKAppDelegate*)[UIApplication sharedApplication].delegate;
-    NSURL* apiURL = app.apiURL;
-    [Tag fetchFromUrl:apiURL success: ^(NSArray* fetchedEntitles) {
-        [Post fetchFromUrl:apiURL];
+    
+    if (![[self class] dataLoaded]) {
+        SKAppDelegate* app = (SKAppDelegate*)[UIApplication sharedApplication].delegate;
+        NSURL* apiURL = app.apiURL;
+        [Tag fetchFromUrl:apiURL success: ^(NSArray* fetchedEntitles) {
+            [Post fetchFromUrl:apiURL];
+            
+        }];
+
         
-    }];
+        [Signature fetchFromUrl:apiURL];
+        
+        [Author fetchFromUrl:apiURL success: ^(NSArray* fetchedEntitles) {
+            [self setupDataSource];
 
-    
-    [Signature fetchFromUrl:apiURL];
-    
-    [Author fetchFromUrl:apiURL success: ^(NSArray* fetchedEntitles) {
+        }];
+    } else {
         [self setupDataSource];
-
-    }];
+    }
 
 
     

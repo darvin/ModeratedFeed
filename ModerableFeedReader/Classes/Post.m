@@ -64,8 +64,9 @@
     
     Tag* tag;
     for (NSString* tagName in item.categories) {
-        tag = [Tag findFirstByAttribute:@"name" withValue:tagName];
+        tag = [Tag findFirstByAttribute:@"name" withValue:[tagName lowercaseString]];
         if (tag) {
+            NSLog(@"%@ %@", tag, tagName);
             [post addTagsObject:tag];
         }
     }

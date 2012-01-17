@@ -10,4 +10,5 @@
 
 @interface PostsListController : UITableViewController
 @property (strong, nonatomic) id relatedTo;
++ (int) dataLoaded;
 @end
