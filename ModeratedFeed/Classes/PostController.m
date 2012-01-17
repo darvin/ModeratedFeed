@@ -7,7 +7,7 @@
 //
 
 #import "PostController.h"
-
+#import "SHK.h"
 @implementation PostController
 @synthesize post=_post;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -25,6 +25,19 @@
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
+}
+
+
+- (IBAction)share:(id)sender
+{
+    [SHK setRootViewController:self.tabBarController];
+
+	SHKItem *item = [SHKItem URL:[NSURL URLWithString: self.post.url] title:self.post.title];
+    
+	SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
+    
+	[actionSheet showFromToolbar:self.navigationController.toolbar];
+
 }
 
 #pragma mark - View lifecycle

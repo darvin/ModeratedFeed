@@ -63,7 +63,7 @@
         <scene sceneID="15">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
-                <tabBarController id="4" sceneMemberID="viewController">
+                <tabBarController id="4" customClass="TabBarPopToRootController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
@@ -82,7 +82,7 @@
         <scene sceneID="jpe-vb-8j7">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4a-Ac-Bfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController definesPresentationContext="YES" id="31e-QR-040" customClass="ResetNavigationController" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="31e-QR-040" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="yTt-1j-gra"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="mCt-4j-twP">
                         <autoresizingMask key="autoresizingMask"/>
@@ -184,7 +184,7 @@
         <scene sceneID="CY9-pl-yW4">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cef-4w-rsr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController definesPresentationContext="YES" id="Ci8-Jd-FGh" customClass="ResetNavigationController" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="Ci8-Jd-FGh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="eZE-hE-bRl"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="76Z-nc-aT9">
                         <autoresizingMask key="autoresizingMask"/>
@@ -205,7 +205,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </webView>
-                    <navigationItem key="navigationItem" id="1Js-lT-hO6"/>
+                    <navigationItem key="navigationItem" id="1Js-lT-hO6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Mtl-w1-J6W">
+                            <connections>
+                                <action selector="share:" destination="aOw-uW-Uvp" id="Gtk-jv-sEo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="730" y="1170"/>
@@ -213,7 +219,7 @@
         <scene sceneID="EYt-IA-BeH">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JSM-C3-2O6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController definesPresentationContext="YES" id="Mu4-DM-IU3" customClass="ResetNavigationController" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="Mu4-DM-IU3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="VOR-gI-B8s"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ISk-JX-50D">
                         <autoresizingMask key="autoresizingMask"/>
@@ -286,12 +292,60 @@
         <image name="15-tags.png" width="24" height="25"/>
         <image name="53-house.png" width="22" height="22"/>
     </resources>
+    <classes>
+        <class className="AuthorListController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AuthorListController.h"/>
+        </class>
+        <class className="AuthorTableViewCell" superclassName="FRCTableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AuthorTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="authorName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="authorPicture" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="FRCTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FRCTableViewCell.h"/>
+        </class>
+        <class className="PostController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PostController.h"/>
+            <relationships>
+                <relationship kind="action" name="share:"/>
+            </relationships>
+        </class>
+        <class className="PostTableViewCell" superclassName="FRCTableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PostTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="authorName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="authorPicture" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="PostsListController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PostsListController.h"/>
+        </class>
+        <class className="RoundedImageView" superclassName="UIImageView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RoundedImageView.h"/>
+        </class>
+        <class className="TabBarPopToRootController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TabBarPopToRootController.h"/>
+        </class>
+        <class className="TagListController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TagListController.h"/>
+        </class>
+        <class className="TagTableViewCell" superclassName="FRCTableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TagTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="x97-YM-B1z"/>
+        <segue reference="ETO-KB-FDq"/>
     </inferredMetricsTieBreakers>
 </document>

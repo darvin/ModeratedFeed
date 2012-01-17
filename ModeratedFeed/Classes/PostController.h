@@ -10,4 +10,5 @@
 #import "Post.h"
 @interface PostController : UIViewController
 @property (strong, nonatomic) Post* post;
+- (IBAction)share:(id)sender;
 @end

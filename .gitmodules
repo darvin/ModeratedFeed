@@ -22,3 +22,12 @@
 [submodule "libs/MKStoreKit"]
 	path = libs/MKStoreKit
 	url = git://github.com/MugunthKumar/MKStoreKit.git
+[submodule "libs/ShareKit"]
+	path = libs/ShareKit
+	url = git://github.com/ShareKit/ShareKit.git
+[submodule "libs/IADisquser"]
+	path = libs/IADisquser
+	url = git://github.com/ixnixnixn/IADisquser.git
+[submodule "libs/JSONKit"]
+	path = libs/JSONKit
+	url = git://github.com/johnezang/JSONKit.git

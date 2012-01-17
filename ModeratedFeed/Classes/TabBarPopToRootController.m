@@ -1,14 +1,14 @@
 //
-//  ResetNavigationController.m
-//  ModerableFeedReader
+//  TabBarPopToRootController.m
+//  ModeratedFeed
 //
-//  Created by Sergey Klimov on 1/16/12.
+//  Created by Sergey Klimov on 1/17/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "ResetNavigationController.h"
+#import "TabBarPopToRootController.h"
 
-@implementation ResetNavigationController
+@implementation TabBarPopToRootController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,13 +36,13 @@
 }
 */
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.delegate = self;
 }
-*/
+
 
 - (void)viewDidUnload
 {
@@ -51,15 +51,20 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (void) viewWillAppear:(BOOL)animated {
-    [self popToRootViewControllerAnimated:NO];
-    [super viewWillAppear:animated];
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    
+    if ([viewController class]==[UINavigationController class]) {
+        [((UINavigationController*) viewController) popToRootViewControllerAnimated:NO];
+    }
+    
+}
+
+
 
 @end
